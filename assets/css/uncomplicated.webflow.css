@@ -1,0 +1,209 @@
+body {
+  font-family: Muli, sans-serif;
+  color: #333;
+  font-size: 17px;
+  line-height: 1.45em;
+  font-weight: 300;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 0.5em;
+  font-size: 2.074em;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 0.5em;
+  font-size: 1.728em;
+  line-height: 1.2em;
+  font-weight: 200;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 0.5em;
+  font-size: 1.44em;
+  line-height: 1.2em;
+  font-weight: 200;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 200;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 0.5em;
+  padding-left: 20px;
+}
+
+.section-minvh {
+  min-height: 100vh;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-grey {
+  background-color: #b8c2cc;
+}
+
+.bg-grey-light {
+  background-color: #dae1e7;
+}
+
+.bg-grey-lighter {
+  background-color: #f1f5f8;
+}
+
+.bg-grey-lightest {
+  background-color: #f8fafc;
+}
+
+.bg-grey-dark {
+  background-color: #8795a1;
+}
+
+.bg-grey-darker {
+  background-color: #606f7b;
+}
+
+.bg-grey-darkest {
+  background-color: #3d4852;
+}
+
+.bg-black {
+  background-color: #22292f;
+  color: #999;
+}
+
+.mx-560 {
+  display: block;
+  width: 560px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.padding-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.btn-submit {
+  width: 100%;
+  height: 50px;
+  border-style: solid;
+  border-width: 1px 1px 3px;
+  border-color: #38a89d;
+  border-radius: 4px;
+  background-color: #4dc0b5;
+  -webkit-transition: background-color 650ms ease;
+  transition: background-color 650ms ease;
+  font-size: 14px;
+}
+
+.btn-submit:hover {
+  background-color: #38a89d;
+}
+
+.input-normal {
+  height: 50px;
+  border: 1px solid #dae1e7;
+  border-radius: 4px;
+  color: #3d4852;
+}
+
+.input-normal::-webkit-input-placeholder {
+  color: #8795a1;
+}
+
+.input-normal:-ms-input-placeholder {
+  color: #8795a1;
+}
+
+.input-normal::placeholder {
+  color: #8795a1;
+}
+
+.home-header {
+  font-weight: 400;
+}
+
+.nav-link {
+  -webkit-transition: color 650ms ease;
+  transition: color 650ms ease;
+  color: #b8c2cc;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.brand-text {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.mx-640 {
+  display: block;
+  width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 991px) {
+  .nav-link {
+    background-color: #fff;
+  }
+  .menu-button.w--open {
+    background-color: transparent;
+    color: #000;
+  }
+}
+
+@media (max-width: 767px) {
+  .mx-560 {
+    width: auto;
+  }
+  .padding-20 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .btn-submit {
+    width: 100%;
+  }
+  .mx-640 {
+    width: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .menu-button {
+    display: block;
+    float: right;
+    text-align: center;
+  }
+  .brand {
+    float: left;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
