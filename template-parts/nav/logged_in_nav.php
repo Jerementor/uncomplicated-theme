@@ -1,6 +1,6 @@
 <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
 <div class="w-container">
-<a href="#" class="brand w-nav-brand">
+<a href="/" class="brand w-nav-brand">
   <h3 class="brand-text"><?php bloginfo( 'name' ); ?></h3>
 </a>
 <nav role="navigation" class="w-nav-menu">
