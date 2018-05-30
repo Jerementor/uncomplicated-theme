@@ -10,7 +10,6 @@ get_header();
 
 <!-- Index.php -->
 <div class="padding-20-centered">
-<div class="mx-560"></div>
 <div class="w-container">
   <h1 class="post-header"><?php wp_title(''); ?></h1>
 </div>

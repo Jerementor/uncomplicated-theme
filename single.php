@@ -11,10 +11,9 @@ get_header();
 
 <!--SINGLE.PHP-->
 <div class="padding-20-centered">
-<div class="mx-560"></div>
 <div class="w-container">
   <h1 class="post-header"><?php wp_title(''); ?></h1>
-  <h2 class="post-author">By <?php echo strtoupper(get_the_author_meta('first_name' & 'last_name')); ?></h2>
+  <h2 class="post-author">By <?php echo strtoupper(get_the_author_meta('display_name', 0)); ?></h2>
 </div>
 </div>
 
