@@ -9,7 +9,12 @@ get_header();
 
 
 <!-- Category.php -->
-<h1 class="home-header"><?php single_cat_title(); ?></h1>
+<div class="padding-20-centered">
+<div class="mx-560"></div>
+<div class="w-container">
+  <h1 class="post-header"><?php single_cat_title(); ?></h1>
+</div>
+</div>
 <div class="w-row">
     <div class="w-col w-col-8">
 

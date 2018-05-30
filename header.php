@@ -28,10 +28,8 @@
 <!--<div class="w-container">-->
 <!--<div class="jer_640">-->
 <!--<!?php get_template_part('template-parts/nav/logged_out_nav'); ?>-->
-<div class="section-minvh">
-<div class="padding-20">
-<div class="mx-560">
-<div class="w-container">  
+
+
 <?php if (is_user_logged_in() ) : ?> 
 <?php get_template_part('template-parts/nav/logged_in_nav'); ?>
 <?php else: ?>

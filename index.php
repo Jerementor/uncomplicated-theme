@@ -9,7 +9,13 @@ get_header();
 ?>
 
 <!-- Index.php -->
-<h1 class="jer_page_header"><?php wp_title(''); ?></h1>
+<div class="padding-20-centered">
+<div class="mx-560"></div>
+<div class="w-container">
+  <h1 class="post-header"><?php wp_title(''); ?></h1>
+</div>
+</div>
+
 
 <div class="w-row">
     <div class="w-col w-col-8">
@@ -29,6 +35,8 @@ get_header();
         <?php get_sidebar(); ?>	
     </div>
 </div>
+
+
 <!--End Row-->
 
 

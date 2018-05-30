@@ -10,13 +10,22 @@ get_header();
 ?>
 
 <!--SINGLE.PHP-->
-<?php wp_title(''); ?>
-
+<div class="padding-20-centered">
+<div class="mx-560"></div>
+<div class="w-container">
+  <h1 class="post-header"><?php wp_title(''); ?></h1>
+  <h2 class="post-author">By <?php echo strtoupper(get_the_author_meta('first_name' & 'last_name')); ?></h2>
+</div>
+</div>
 
 	
 	<!--<!?php the_category(' ', 'multiple')?>-->
 	<!--<!?php the_excerpt(); ?>-->
-
+	
+	
+<div class="padding-20">
+<div class="mx-560">
+<div class="w-container">
 <?php 
 	if ( have_posts() ) {
 		while ( have_posts() ) {
@@ -27,5 +36,7 @@ get_header();
 		} // end while
 	} // end if
 ?>
-
+</div>
+</div>
+</div>
 <?php get_footer(); ?>
