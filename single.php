@@ -14,7 +14,7 @@ get_header();
 <div class="w-container">
   <h1 class="post-header"><?php wp_title(''); ?></h1>
   <!--<h2 class="post-author">By   <!?php echo get_the_author(); ?></h2>-->
-  <h2 class="post-author"><span class="author-heading"><?php _e( 'Author:', 'uncomplicated' ); ?></span> <?php echo get_the_author('display_name', 1); ?></h2>
+  <h2 class="post-author"><span class="author-heading"><?php _e( 'Author:', 'uncomplicated' ); ?></span> <?php echo get_the_author('display_name', 3); ?></h2>
  
 </div>
 </div>
