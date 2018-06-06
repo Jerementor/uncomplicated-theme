@@ -13,15 +13,13 @@ get_header();
 <div class="padding-20">
 <div class="w-container">
   <h1><?php wp_title(''); ?></h1>
-
 <div class="w-row">
     <div class="w-col w-col-8">
-      	
 	     <?php if ( have_posts() ) : ?>
     		<?php while ( have_posts() ) : the_post(); ?>
     		   <div class="get-post-info">
        			    <?php the_title(sprintf('<a class="article-header" href="%s" rel="bookmark">', esc_url(get_permalink() )), '</li>'); ?>
-       			    <?php the_excpert(); ?>
+       			    <?php the_excerpt(); ?>
                 </div>
 	        <?php endwhile; ?>
 	    <?php endif; ?>    		
