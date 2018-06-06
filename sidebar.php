@@ -8,7 +8,7 @@
  */
 ?>
    
-<div>
+<div class="get-post-info">
         <!--edit above div if fails-->
         <aside id="secondary" role="complementary">
                 <?php if(is_active_sidebar('article-sidebar')) : ?>
