@@ -10,23 +10,18 @@ get_header();
 ?>
 
 <!--SINGLE.PHP-->
-<div class="padding-20-centered">
-<div class="w-container">
-  <h1 class="post-header"><?php wp_title(''); ?></h1>
-  <!--<h2 class="post-author">By   <!?php echo get_the_author(); ?></h2>-->
-  <!--<h2 class="post-author"><span class="author-heading"><!?php _e( 'Author:', 'uncomplicated' ); ?></span> <!?php echo get_the_author('display_name', 2); ?></h2>-->
- 
-</div>
-</div>
 
 	
 	<!--<!?php the_category(' ', 'multiple')?>-->
 	<!--<!?php the_excerpt(); ?>-->
 	
 	
+<div class="section-minvh bg-grey-lighter">
 <div class="padding-20">
-<div class="mx-560">
+<div class="mx-640">
 <div class="w-container">
+<h1 class="page-post-heading"><?php wp_title(''); ?></h1>
+<div class="get-post-info">
 <?php 
 	if ( have_posts() ) {
 		while ( have_posts() ) {
@@ -37,6 +32,8 @@ get_header();
 		} // end while
 	} // end if
 ?>
+</div>
+</div>
 </div>
 </div>
 </div>
