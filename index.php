@@ -35,10 +35,6 @@ get_header();
 </div>
 
 
-<!--End Row-->
-
-
-
 <?php get_footer(); ?>
 
 
