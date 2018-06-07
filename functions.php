@@ -39,10 +39,10 @@ add_post_type_support( 'page', 'excerpt' );
 
 add_filter ('get_the_excerpt','uncomp_filter_excerpt');
 
-// function uncomp_filter_excerpt ($post_excerpt) { 
-//   $post_excerpt = '<p class="jer_post_sub">' . $post_excerpt . '</p>';
-//   return $post_excerpt;
-//}  
+function uncomp_filter_excerpt ($post_excerpt) { 
+  $post_excerpt = '<p class="jer_post_sub">' . $post_excerpt . '</p>';
+  return $post_excerpt;
+}  
 
 function uncomp_widgets(){
 
