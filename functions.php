@@ -55,6 +55,17 @@ function uncomp_widgets(){
      'before_title'   => '<h3 class="jer_h3"> ',
      'after_title'    => '</h3>',
   ));
+  
+   register_sidebar(array(
+     'name'           => __('Course - Sidebar', 'uncomp'),
+     'id'             => 'course-sidebar',
+     'description'    => __('Add widgets here to appear in the sidebar', 'uncomp'),
+     'before_widget'  => '<div id="%1$s" class="%2$s">',
+     'after_widget'   => '</div>',
+     'before_title'   => '<h3 class="jer_h3"> ',
+     'after_title'    => '</h3>',
+  ));
+  
 }
 add_action('widgets_init', 'uncomp_widgets');
 
