@@ -10,11 +10,6 @@
  * @version     1.9.0
  */
 ?>
-
-<?php  get_sensei_header();  ?>
-
-<?php the_post(); ?>
-<!--SINGLE LESSON-->
 <div class="flex-full">
 <div class="course-sidebar">
     <aside id="secondary" role="complementary">
@@ -27,6 +22,11 @@
 <div class="course-content">
 <div class="padding-sides-60">
 <div class="get-post-info">
+<?php  get_sensei_header();  ?>
+
+<?php the_post(); ?>
+<!--SINGLE LESSON-->
+
         
 <article <?php post_class( array( 'lesson', 'post' ) ); ?>>
 
