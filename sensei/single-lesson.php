@@ -14,7 +14,7 @@
 <?php  get_sensei_header();  ?>
 
 <?php the_post(); ?>
-<?php get_template_part('template-parts/course/course-sidebar'); ?>
+<!--<!?php get_template_part('template-parts/course/course-sidebar'); ?>-->
 <div class="course-content">
 <div class="padding-sides-60">
 <div class="get-post-info">
