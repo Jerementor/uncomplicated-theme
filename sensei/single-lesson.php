@@ -10,7 +10,7 @@
  * @version     1.9.0
  */
 ?>
-
+<div class="flex-full">
 <?php  get_sensei_header();  ?>
 
 <?php the_post(); ?>
@@ -81,5 +81,5 @@
     ?>
 
 </article><!-- .post -->
-
+</div>
 <?php get_sensei_footer(); ?>
