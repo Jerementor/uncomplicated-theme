@@ -11,17 +11,12 @@
  */
 ?>
 
+<?php  get_sensei_header();  ?>
 
-<!--SINGLE LESSON-->
-<div class="flex-full">
-<div class="course-sidebar">
-    sidebar goes here    
-</div>       
-<div class="course-content">
-<div class="padding-sides-60">
-<div class="get-post-info">
-<article <?php post_class( array( 'lesson', 'post' ) ); ?>
-    
+<?php the_post(); ?>
+
+<article <?php post_class( array( 'lesson', 'post' ) ); ?>>
+
     <?php
 
         /**
@@ -39,7 +34,9 @@
         do_action( 'sensei_single_lesson_content_inside_before', get_the_ID() );
 
     ?>
- 
+
+    <section class="entry fix">
+
         <?php
 
         if ( sensei_can_user_view_lesson() ) {
@@ -56,7 +53,9 @@
             ?>
 
                 <p>
+
                     <?php echo get_the_excerpt(); ?>
+
                 </p>
 
             <?php
@@ -64,7 +63,8 @@
 
         ?>
 
-   
+    </section>
+
     <?php
 
         /**
@@ -80,10 +80,6 @@
 
     ?>
 
-
-</div>
-</div>
-</div>   
 </article><!-- .post -->
-</div>   <!-- end flex -->
+
 <?php get_sensei_footer(); ?>

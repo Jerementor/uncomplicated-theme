@@ -14,9 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 ?>
 
+<article <?php post_class( get_the_ID() ); ?> >
 
-<!--<article <!?php post_class( get_the_ID() ); ?> >-->
-<!--CONTENT LESSON-->
     <section class="lesson-content">
 
         <?php
@@ -79,4 +78,4 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
     </section> <!-- article .lesson-content -->
 
-<!--</article> <!-- article .(<!?php echo esc_attr( join( ' ', get_post_class( array( 'lesson', 'post' ) ) ) ); ?>  -->
+</article> <!-- article .(<?php echo esc_attr( join( ' ', get_post_class( array( 'lesson', 'post' ) ) ) ); ?>  -->
