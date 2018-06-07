@@ -86,8 +86,6 @@ add_action('sensei_before_main_content', 'my_theme_wrapper_start', 10);
 add_action('sensei_after_main_content', 'my_theme_wrapper_end', 10);
 
 
-
-
 function my_theme_wrapper_start() {
   echo '<div class="flex-full">';
   get_sidebar('course');
@@ -98,13 +96,21 @@ function my_theme_wrapper_end() {
   echo '</div>';
 }
 
+
+/**
+ * Declare support for the WooCommerce Sensei
+ */
+function uncomp_declare_sensei_support() {
+    add_theme_support( 'sensei' );
+}
+add_action( 'after_setup_theme', 'uncomp_declare_sensei_support' );
 /**
 * remove default sensei titles
 */
-global $woothemes_sensei;
-remove_action( ‘sensei_course_single_title’, array( $woothemes_sensei->frontend , ‘sensei_single_title’ ), 10 );
-remove_action( ‘sensei_lesson_single_title’, array( $woothemes_sensei->frontend , ‘sensei_single_title’ ), 10 );
-remove_action( ‘sensei_quiz_single_title’, array( $woothemes_sensei->frontend, ‘sensei_single_title’ ), 10 );
-remove_action( ‘sensei_message_single_title’, array( $woothemes_sensei->frontend, ‘sensei_single_title’ ), 10 );
+// global $woothemes_sensei;
+// remove_action( ‘sensei_course_single_title’, array( $woothemes_sensei->frontend , ‘sensei_single_title’ ), 10 );
+// remove_action( ‘sensei_lesson_single_title’, array( $woothemes_sensei->frontend , ‘sensei_single_title’ ), 10 );
+// remove_action( ‘sensei_quiz_single_title’, array( $woothemes_sensei->frontend, ‘sensei_single_title’ ), 10 );
+// remove_action( ‘sensei_message_single_title’, array( $woothemes_sensei->frontend, ‘sensei_single_title’ ), 10 );
 
 
