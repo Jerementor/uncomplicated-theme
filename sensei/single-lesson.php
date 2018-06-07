@@ -11,6 +11,7 @@
  */
 ?>
 
+<div class="course-content">
 <?php  get_sensei_header();  ?>
 
 <?php the_post(); ?>
@@ -34,8 +35,6 @@
         do_action( 'sensei_single_lesson_content_inside_before', get_the_ID() );
 
     ?>
-<div class="flex-full">
-<div class="course-sidebar"></div>
     <section class="entry fix">
 
         <?php
