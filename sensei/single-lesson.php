@@ -13,9 +13,9 @@
 
 
 <!--SINGLE LESSON-->
- <div class="flex-full">
+ <div class="flex-full" <?php post_class( array( 'lesson', 'post' ) ); ?>>
 <div class="course-sidebar"></div>       
-<article <?php post_class( array( 'lesson', 'post' ) ); ?>>
+<!--<article <!?php post_class( array( 'lesson', 'post' ) ); ?>>-->
     
     <?php
 
@@ -84,6 +84,6 @@
 </div>
 </div>
 </div>   
-</article><!-- .post -->
+<!--</article><!-- .post -->-->
 </div>   <!-- end flex -->
 <?php get_sensei_footer(); ?>
