@@ -15,7 +15,10 @@
 
 <?php the_post(); ?>
 <div class="course-content">
-
+<div class="padding-sides-60">
+    <div class="get-post-info">
+        
+  
 <article <?php post_class( array( 'lesson', 'post' ) ); ?>>
 
     <?php
@@ -82,5 +85,7 @@
     ?>
 
 </article><!-- .post -->
+</div>
+  </div>
 </div>
 <?php get_sensei_footer(); ?>
