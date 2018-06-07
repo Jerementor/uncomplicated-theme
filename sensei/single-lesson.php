@@ -11,13 +11,12 @@
  */
 ?>
 <div class="flex-full">
-<h1>MOTHEROFGODWORKSINGLELESSON</h1>
-<?php  get_sensei_header();  ?>
+<div class="course-sidebar"></div>
 
-<?php the_post(); ?>
 <!--SINGLE LESSON-->
         
 <article <?php post_class( array( 'lesson', 'post' ) ); ?>>
+    
     <?php
 
         /**
@@ -36,8 +35,13 @@
 
     ?>
     
+     <div class="course-content">
+      <div class="padding-sides-60">
+        <div class="get-post-info">
     <section class="entry fix">
-
+            <?php  get_sensei_header();  ?>
+            
+            <?php the_post(); ?>
         <?php
 
         if ( sensei_can_user_view_lesson() ) {
@@ -63,9 +67,9 @@
         ?>
 
     </section>
-      </div>
-    </div>
-  </div>  
+         
+ 
+   
     <?php
 
         /**
@@ -81,7 +85,10 @@
 
     ?>
 
-</article><!-- .post -->
 
 </div>
+</div>
+</div>   
+</article><!-- .post -->
+</div>   <!-- end flex -->
 <?php get_sensei_footer(); ?>
