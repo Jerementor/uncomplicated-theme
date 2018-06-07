@@ -14,8 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 ?>
 
-<div class="content-buttons">
-<article <?php post_class( get_the_ID() ); ?> >
+]<article <?php post_class( get_the_ID() ); ?> >
 
     <section class="lesson-content">
 
