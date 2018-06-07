@@ -10,8 +10,7 @@
  * @version     1.9.0
  */
 ?>
-<div class="flex-full">
-<div class="course-sidebar"></div>
+
 
 <!--SINGLE LESSON-->
         
@@ -34,14 +33,11 @@
         do_action( 'sensei_single_lesson_content_inside_before', get_the_ID() );
 
     ?>
-    
+<div class="flex-full">
+<div class="course-sidebar"></div>
      <div class="course-content">
       <div class="padding-sides-60">
         <div class="get-post-info">
-    <section class="entry fix">
-            <?php  get_sensei_header();  ?>
-            
-            <?php the_post(); ?>
         <?php
 
         if ( sensei_can_user_view_lesson() ) {
@@ -66,7 +62,6 @@
 
         ?>
 
-    </section>
          
  
    
