@@ -150,6 +150,8 @@ li {
 }
 
 .home-header {
+  font-size: 2.441em;
+  line-height: 1.3em;
   font-weight: 400;
 }
 
@@ -332,6 +334,10 @@ li {
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12);
+}
+
+.div-centered {
+  text-align: center;
 }
 
 @media (max-width: 991px) {
