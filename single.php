@@ -15,13 +15,12 @@ get_header();
 	<!--<!?php the_category(' ', 'multiple')?>-->
 	<!--<!?php the_excerpt(); ?>-->
 	
-	
 <div class="section-minvh bg-grey-lighter">
 <div class="padding-20">
-<div class="mx-640">
 <div class="w-container">
 <h1 class="page-post-heading"><?php wp_title(''); ?></h1>
-<div class="get-post-info">
+<div class="get-post-content">
+<div class="mx-640">
 <?php 
 	if ( have_posts() ) {
 		while ( have_posts() ) {
