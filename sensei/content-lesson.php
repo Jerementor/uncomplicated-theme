@@ -14,6 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 ?>
 
+<div class="flex-full">
+
 <article <?php post_class( get_the_ID() ); ?> >
 <!--CONTENT LESSON-->
     <section class="lesson-content">
