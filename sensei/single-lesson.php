@@ -13,7 +13,11 @@
 
 
 <!--SINGLE LESSON-->
-        
+ <div class="flex-full">
+<div class="course-sidebar"></div>
+     <div class="course-content">
+      <div class="padding-sides-60">
+        <div class="get-post-info">       
 <article <?php post_class( array( 'lesson', 'post' ) ); ?>>
     
     <?php
@@ -33,11 +37,7 @@
         do_action( 'sensei_single_lesson_content_inside_before', get_the_ID() );
 
     ?>
-<div class="flex-full">
-<div class="course-sidebar"></div>
-     <div class="course-content">
-      <div class="padding-sides-60">
-        <div class="get-post-info">
+
         <?php
 
         if ( sensei_can_user_view_lesson() ) {
