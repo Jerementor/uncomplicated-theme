@@ -86,11 +86,11 @@ add_action('sensei_before_main_content', 'my_theme_wrapper_start', 10);
 add_action('sensei_after_main_content', 'my_theme_wrapper_end', 10);
 
 function my_theme_wrapper_start() {
-  echo '<div class="flex-full"';
+  echo '<div class="flex-full">';
 }
 
 function my_theme_wrapper_end() {
-  echo '</div><!-- #uncomp-page-wrapper -->';
+  echo '</div>';
     // get_sidebar();
 }
 
