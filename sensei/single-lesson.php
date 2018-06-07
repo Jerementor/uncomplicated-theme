@@ -65,6 +65,7 @@
         ?>
 
 </section>
+<div class="content-buttons">
     <?php
 
         /**
@@ -78,6 +79,7 @@
          */
         do_action( 'sensei_single_lesson_content_inside_after', get_the_ID() );
     ?>
+</div>
 </article><!-- .post -->
 </div>
 </div>
