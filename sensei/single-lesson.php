@@ -83,6 +83,6 @@ if ( sensei_can_user_view_lesson() ) {
          */
         do_action( 'sensei_single_lesson_content_inside_after', get_the_ID() );
     ?>
-</div>
-</div>
 <?php get_sensei_footer(); ?>
+</div>
+</div>
