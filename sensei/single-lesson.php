@@ -17,9 +17,7 @@
 <?php get_template_part('template-parts/course/course-sidebar'); ?>
 <div class="course-content">
 <div class="padding-sides-60">
-    <div class="get-post-info">
-        
-  
+<div class="get-post-info">
 <article <?php post_class( array( 'lesson', 'post' ) ); ?>>
 
     <?php
@@ -69,6 +67,8 @@
         ?>
 
     </section>
+      <div class="content-buttons">
+    
 
     <?php
 
@@ -85,8 +85,9 @@
 
     ?>
 
+      </div>
 </article><!-- .post -->
 </div>
-  </div>
+</div>
 </div>
 <?php get_sensei_footer(); ?>
