@@ -19,10 +19,10 @@ get_header();
     		<?php while ( have_posts() ) : the_post(); ?>
     		   <div class="get-post-info">
        			    <?php the_title(sprintf('<a class="article-header" href="%s" rel="bookmark">', esc_url(get_permalink() )), '</a>'); ?>
-       			    <?php get_the_excerpt(); ?>
+       			    <p><?php the_excerpt(); ?></p>
                 </div>
 	        <?php endwhile; ?>
-	    <?php endif; ?>    		
+	    <?php endif; ?>    			
       	     
     </div>
     
