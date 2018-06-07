@@ -12,13 +12,13 @@
 ?>
 <div class="flex-full">
 <div class="course-sidebar">
-    <aside id="secondary" role="complementary">
-        <?php if(is_active_sidebar('course-sidebar')) : ?>
-            <?php dynamic_sidebar('course-sidebar'); ?>
-        <?php endif; ?>
-    </aside>  
+    <!--<aside id="secondary" role="complementary">-->
+    <!--    <!?php if(is_active_sidebar('course-sidebar')) : ?>-->
+    <!--        <!?php dynamic_sidebar('course-sidebar'); ?>-->
+    <!--    <!?php endif; ?>-->
+    <!--</aside>  -->
 </div>
-    
+
 <div class="course-content">
 <div class="padding-sides-60">
 <div class="get-post-info">
@@ -26,7 +26,6 @@
 
 <?php the_post(); ?>
 <!--SINGLE LESSON-->
-
         
 <article <?php post_class( array( 'lesson', 'post' ) ); ?>>
 
