@@ -87,10 +87,10 @@ add_action('sensei_after_main_content', 'my_theme_wrapper_end', 10);
 
 function my_theme_wrapper_start() {
   echo '<div class="flex-full">';
+  get_sidebar('course');
 }
 
 function my_theme_wrapper_end() {
-  get_sidebar('course');
     
   echo '</div>';
 }
