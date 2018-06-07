@@ -64,3 +64,5 @@ function uncomp_widget_title($t)
 
     return null;
 }
+
+add_theme_support( 'woocommerce' );
