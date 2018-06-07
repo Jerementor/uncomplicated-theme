@@ -10,7 +10,7 @@
  * @version     1.9.0
  */
 ?>
-<div class="flex-full">
+
 <?php  get_sensei_header();  ?>
 
 <?php the_post(); ?>
@@ -34,6 +34,7 @@
         do_action( 'sensei_single_lesson_content_inside_before', get_the_ID() );
 
     ?>
+<div class="flex-full">
 
     <section class="entry fix">
 
