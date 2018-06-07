@@ -13,8 +13,10 @@
 
 
 <!--SINGLE LESSON-->
- <div class="flex-full" <?php post_class( array( 'lesson', 'post' ) ); ?>>
-<div class="course-sidebar"></div>       
+<div class="flex-full" <?php post_class( array( 'lesson', 'post' ) ); ?>>
+<div class="course-sidebar">
+    sidebar goes here    
+</div>       
 <!--<article <!?php post_class( array( 'lesson', 'post' ) ); ?>>-->
     
     <?php
