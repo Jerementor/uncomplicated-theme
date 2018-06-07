@@ -38,33 +38,37 @@
 ?>
 <section class="entry fix">
 
-        <?php
+<?php
 
-        if ( sensei_can_user_view_lesson() ) {
+if ( sensei_can_user_view_lesson() ) {
 
-            if( apply_filters( 'sensei_video_position', 'top', $post->ID ) == 'top' ) {
+    if( apply_filters( 'sensei_video_position', 'top', $post->ID ) == 'top' ) {
 
-                do_action( 'sensei_lesson_video', $post->ID );
+        do_action( 'sensei_lesson_video', $post->ID );
 
-            }
+    }
 
-            the_content();
+    the_content();
 
-        } else {
-            ?>
+} else {
+    ?>
 
-                <p>
+        <p>
 
-                    <?php echo get_the_excerpt(); ?>
+            <?php echo get_the_excerpt(); ?>
 
-                </p>
+        </p>
 
-            <?php
-        }
+    <?php
+}
 
-        ?>
+?>
 
 </section>
+
+</article><!-- .post -->
+</div>
+</div>
 <div class="content-buttons">
     <?php
 
@@ -79,9 +83,6 @@
          */
         do_action( 'sensei_single_lesson_content_inside_after', get_the_ID() );
     ?>
-</div>
-</article><!-- .post -->
-</div>
 </div>
 </div>
 <?php get_sensei_footer(); ?>
