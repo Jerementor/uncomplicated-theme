@@ -13,7 +13,7 @@
 
 <?php  get_sensei_header();  ?>
 
-<!--<!?php the_post(); ?>-->
+<?php the_post(); ?>
 <?php get_template_part('template-parts/course/course-sidebar'); ?>
 <div class="course-content">
 <div class="padding-sides-60">
@@ -77,7 +77,7 @@
          *
          * @hooked Sensei()->frontend->sensei_breadcrumb   - 30
          */
-        do_action( 'sensei_single_lesson_content_inside_after', get_the_ID() );
+        //do_action( 'sensei_single_lesson_content_inside_after', get_the_ID() );
     ?>
 </div>
 </article><!-- .post -->
