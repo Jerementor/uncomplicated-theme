@@ -35,7 +35,7 @@
 
     ?>
 <div class="flex-full">
-
+<div class="course-sidebar"></div>
     <section class="entry fix">
 
         <?php
