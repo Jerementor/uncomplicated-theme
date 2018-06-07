@@ -77,3 +77,19 @@ function uncomp_widget_title($t)
 }
 
 add_theme_support( 'woocommerce' );
+
+global $woothemes_sensei;
+remove_action( 'sensei_before_main_content', array( $woothemes_sensei->frontend, 'sensei_output_content_wrapper' ), 10 );
+remove_action( 'sensei_after_main_content', array( $woothemes_sensei->frontend, 'sensei_output_content_wrapper_end' ), 10 );
+
+add_action('sensei_before_main_content', 'my_theme_wrapper_start', 10);
+add_action('sensei_after_main_content', 'my_theme_wrapper_end', 10);
+
+function my_theme_wrapper_start() {
+  echo '<div id="uncomp-page-wrapper"';
+}
+
+function my_theme_wrapper_end() {
+  echo '</div><!-- #uncomp-page-wrapper -->';
+	get_sidebar();
+}
