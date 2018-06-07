@@ -11,24 +11,13 @@
  */
 ?>
 <div class="flex-full">
-<div class="course-sidebar">
-    <!--<aside id="secondary" role="complementary">-->
-    <!--    <!?php if(is_active_sidebar('course-sidebar')) : ?>-->
-    <!--        <!?php dynamic_sidebar('course-sidebar'); ?>-->
-    <!--    <!?php endif; ?>-->
-    <!--</aside>  -->
-</div>
-
-<div class="course-content">
-<div class="padding-sides-60">
-<div class="get-post-info">
+<h1>MOTHEROFGODWORK</h1>
 <?php  get_sensei_header();  ?>
 
 <?php the_post(); ?>
 <!--SINGLE LESSON-->
         
 <article <?php post_class( array( 'lesson', 'post' ) ); ?>>
-
     <?php
 
         /**
@@ -47,7 +36,6 @@
 
     ?>
     
-
     <section class="entry fix">
 
         <?php
@@ -66,9 +54,7 @@
             ?>
 
                 <p>
-
                     <?php echo get_the_excerpt(); ?>
-
                 </p>
 
             <?php
@@ -96,8 +82,6 @@
     ?>
 
 </article><!-- .post -->
-</div>
-</div>
-</div>
+
 </div>
 <?php get_sensei_footer(); ?>
