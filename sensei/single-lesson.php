@@ -19,26 +19,24 @@
 <div class="padding-sides-60">
 <div class="get-post-info">
 <article <?php post_class( array( 'lesson', 'post' ) ); ?>>
+<?php
 
-    <?php
+    /**
+     * Hook inside the single lesson above the content
+     *
+     * @since 1.9.0
+     *
+     * @param integer $lesson_id
+     *
+     * @hooked deprecated_lesson_image_hook - 10
+     * @hooked deprecate_sensei_lesson_single_title - 15
+     * @hooked Sensei_Lesson::lesson_image() -  17
+     * @hooked deprecate_lesson_single_main_content_hook - 20
+     */
+    do_action( 'sensei_single_lesson_content_inside_before', get_the_ID() );
 
-        /**
-         * Hook inside the single lesson above the content
-         *
-         * @since 1.9.0
-         *
-         * @param integer $lesson_id
-         *
-         * @hooked deprecated_lesson_image_hook - 10
-         * @hooked deprecate_sensei_lesson_single_title - 15
-         * @hooked Sensei_Lesson::lesson_image() -  17
-         * @hooked deprecate_lesson_single_main_content_hook - 20
-         */
-        do_action( 'sensei_single_lesson_content_inside_before', get_the_ID() );
-
-    ?>
-
-    <section class="entry fix">
+?>
+<section class="entry fix">
 
         <?php
 
@@ -66,10 +64,8 @@
 
         ?>
 
-    </section>
-      <div class="content-buttons">
-    
-
+</section>
+<div class="content-buttons">
     <?php
 
         /**
@@ -82,10 +78,8 @@
          * @hooked Sensei()->frontend->sensei_breadcrumb   - 30
          */
         do_action( 'sensei_single_lesson_content_inside_after', get_the_ID() );
-
     ?>
-
-      </div>
+</div>
 </article><!-- .post -->
 </div>
 </div>
