@@ -12,6 +12,7 @@
 ?>
 
 <?php  get_sensei_header();  ?>
+<h1>MOTHEROFGODWORKSINGLECOURSE</h1>
 
 <article <?php post_class( array( 'course', 'post' ) ); ?>>
 <!---SINGLE COURSE->

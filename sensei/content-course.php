@@ -16,6 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 
 <li <?php post_class(  WooThemes_Sensei_Course::get_course_loop_content_class() ); ?> >
+<h1>MOTHEROFGODWORKCONTENTCOURSE</h1>
 
 <!--CONTENT COURSE-->
     <?php

@@ -14,6 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 ?>
 
+<h1>MOTHEROFGODWORKCONTENTLESSON</h1>
 
 <article <?php post_class( get_the_ID() ); ?> >
 <!--CONTENT LESSON-->

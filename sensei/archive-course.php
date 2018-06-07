@@ -13,6 +13,8 @@
 
 <?php  get_sensei_header();  ?>
 <!--ARCHIVE COURSE-->
+<h1>MOTHEROFGODWORKARCHIVECOURSE</h1>
+
     <?php
 
         /**

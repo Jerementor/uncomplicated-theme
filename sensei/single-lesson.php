@@ -11,7 +11,7 @@
  */
 ?>
 <div class="flex-full">
-<h1>MOTHEROFGODWORK</h1>
+<h1>MOTHEROFGODWORKSINGLELESSON</h1>
 <?php  get_sensei_header();  ?>
 
 <?php the_post(); ?>
