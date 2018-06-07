@@ -14,6 +14,7 @@
 <?php  get_sensei_header();  ?>
 
 <?php the_post(); ?>
+<div class="course-content">
 
 <article <?php post_class( array( 'lesson', 'post' ) ); ?>>
 
@@ -34,7 +35,6 @@
         do_action( 'sensei_single_lesson_content_inside_before', get_the_ID() );
 
     ?>
-<div class="course-content">
 
     <section class="entry fix">
 
