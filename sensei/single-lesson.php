@@ -65,7 +65,6 @@
         ?>
 
 </section>
-<div class="content-buttons">
     <?php
 
         /**
@@ -77,9 +76,8 @@
          *
          * @hooked Sensei()->frontend->sensei_breadcrumb   - 30
          */
-        //do_action( 'sensei_single_lesson_content_inside_after', get_the_ID() );
+        do_action( 'sensei_single_lesson_content_inside_after', get_the_ID() );
     ?>
-</div>
 </article><!-- .post -->
 </div>
 </div>
