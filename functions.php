@@ -2,7 +2,7 @@
 //Loading in Scripts
 function uncomp_enqueue_styles(){
     wp_enqueue_script('webflow-js', get_template_directory_uri() . '/assets/js/webflow.js', array('jquery'));
-  
+      wp_enqueue_style("sensei-frontend",  get_template_directory_uri() . "/assets/css/frontend.min.css");
     wp_enqueue_style("normalize",  get_template_directory_uri() . "/assets/css/normalize.css");
     wp_enqueue_style("webflow",  get_template_directory_uri() . "/assets/css/webflow.css");
     wp_enqueue_style("uncomp",  get_template_directory_uri() ."/assets/css/uncomplicated.webflow.css");
