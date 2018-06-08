@@ -7,7 +7,7 @@
  */
 get_header(); 
 ?>
-
+<!--PAGE BLANK-->
 <?php 
 if ( have_posts() ) {
 	while ( have_posts() ) {
