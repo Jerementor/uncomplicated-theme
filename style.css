@@ -11,5 +11,5 @@ Tags: epic blog
 
 /* Woocommerce Sensei */
 ul.course-progress-navigation {
-    display: none;
+    display: none !important;
 }
