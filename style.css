@@ -10,6 +10,6 @@ Tags: epic blog
 */
 
 /* Woocommerce Sensei */
-.widget ul.course-progress-navigation {
-    display: none !important;
+ul.course-progress-navigation {
+    display: none;
 }
