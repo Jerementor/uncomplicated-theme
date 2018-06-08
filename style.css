@@ -13,3 +13,10 @@ Tags: epic blog
 ul.course-progress-navigation {
     display: none !important;
 }
+
+nav#post-entries {
+    display: none;
+}
+.sensei-breadcrumb {
+    display: none;
+}
