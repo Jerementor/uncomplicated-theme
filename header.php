@@ -23,7 +23,7 @@
     
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 <!--<div class="section-20 section-light">-->
 <!--<div class="w-container">-->
 <!--<div class="jer_640">-->
