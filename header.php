@@ -17,6 +17,11 @@
 
     <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
 
+
+
+
+    <?php wp_head(); ?>
+    
     <!-- RightMessage -->
     <script type="text/javascript"> 
     (function(p, a, n, d, o, b) {
@@ -28,9 +33,6 @@
     setTimeout(function() { o.parentNode && o.parentNode.removeChild(o); }, a);
     })('1855395163', 2500, document);
     </script>
-
-
-    <?php wp_head(); ?>
     
 </head>
 
