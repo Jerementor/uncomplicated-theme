@@ -52,6 +52,15 @@ li {
   margin-bottom: 0.5em;
 }
 
+blockquote {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-left: 5px solid #3490dc;
+  font-size: 17px;
+  line-height: 1.45em;
+  font-weight: 300;
+}
+
 .section-minvh {
   min-height: 100vh;
 }
@@ -150,9 +159,10 @@ li {
 }
 
 .home-header {
-  font-size: 2.441em;
+  margin-top: 0px;
+  font-size: 45px;
   line-height: 1.3em;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .nav-link {
@@ -169,6 +179,17 @@ li {
 .brand-text {
   margin-top: 15px;
   margin-bottom: 10px;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(.68, -.55, .265, 1.55);
+  transition: -webkit-transform 250ms cubic-bezier(.68, -.55, .265, 1.55);
+  transition: transform 250ms cubic-bezier(.68, -.55, .265, 1.55);
+  transition: transform 250ms cubic-bezier(.68, -.55, .265, 1.55), -webkit-transform 250ms cubic-bezier(.68, -.55, .265, 1.55);
+  font-weight: 200;
+}
+
+.brand-text:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .mx-640 {
@@ -259,16 +280,19 @@ li {
 }
 
 .article-header {
+  display: block;
+  margin-bottom: 0.3em;
   -webkit-transition: color 650ms ease;
   transition: color 650ms ease;
-  color: #8795a1;
-  font-size: 1.728em;
+  color: #3d4852;
+  font-size: 1.5em;
   line-height: 1.45em;
+  font-weight: 600;
   text-decoration: none;
 }
 
 .article-header:hover {
-  color: #22292f;
+  color: #000;
 }
 
 .get-post-info {
@@ -283,7 +307,7 @@ li {
   margin-top: 1em;
   margin-bottom: 1em;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
 }
 
 .input-select {
@@ -373,6 +397,35 @@ li {
   -ms-flex: 1;
   flex: 1;
   background-color: #f1f5f8;
+}
+
+.div-categories {
+  max-height: 640px;
+  margin-bottom: 1.3em;
+  float: none;
+  clear: left;
+}
+
+.category-name {
+  display: inline-block;
+  margin-right: 15px;
+  clear: none;
+  border-bottom: 1px dotted rgba(52, 112, 167, .5);
+  color: rgba(52, 112, 167, .75);
+  text-decoration: none;
+}
+
+.get-post-info-40 {
+  margin-bottom: 2em;
+  padding: 40px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12);
+}
+
+.padding-160 {
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 @media (max-width: 991px) {

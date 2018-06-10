@@ -18,9 +18,16 @@ get_header();
 <div class="section-minvh bg-grey-lighter">
 <div class="padding-20">
 <div class="w-container">
-<h1 class="page-post-heading"><?php wp_title(''); ?></h1>
 <div class="get-post-content">
 <div class="mx-640">
+<h1 class="page-post-heading"><?php wp_title(''); ?></h1>
+<div class="div-categories">
+	<?php the_category(' ', 'multiple')?>
+	<!--<a href="#" class="category-name">Reaction</a>-->
+	<!--<a href="#" class="category-name">Reaction</a>-->
+	<!--<a href="#" class="category-name">Reaction</a>-->
+</div>
+
 <?php 
 	if ( have_posts() ) {
 		while ( have_posts() ) {
