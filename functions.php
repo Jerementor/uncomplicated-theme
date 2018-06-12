@@ -12,7 +12,7 @@
  * Enqueue The Styles & Scripts To Use In The Theme
  */
 function uncomp_enqueue_styles(){
-    wp_enqueue_script('rightmessage-js', get_template_directory_uri() . '/assets/js/rightmessage.js');
+    // wp_enqueue_script('rightmessage-js', get_template_directory_uri() . '/assets/js/rightmessage.js');
     wp_enqueue_script('webflow-js', get_template_directory_uri() . '/assets/js/webflow.js', array('jquery'));
     // wp_enqueue_style("sensei-frontend",  get_template_directory_uri() . "/assets/css/frontend.min.css");
     wp_enqueue_style("normalize",  get_template_directory_uri() . "/assets/css/normalize.css");
@@ -88,20 +88,20 @@ function uncomp_widgets(){
      'name'           => __('Categories- Sidebar', 'uncomp'),
      'id'             => 'article-sidebar',
      'description'    => __('Add widgets here to appear in the sidebar', 'uncomp'),
-     'before_widget'  => '<div id="%1$s" class="%2$s">',
-     'after_widget'   => '</div>',
-     'before_title'   => '<h3 class="jer_h3"> ',
-     'after_title'    => '</h3>',
+	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</aside>',
+	'before_title'  => '<h2 class="widget-title">',
+	'after_title'   => '</h2>'
   ));
   
    register_sidebar(array(
-		'name'          => __( 'Course Sidebar Area', 'uncomp' ),
-		'id'            => 'course-sidebar',
-		'description'   => __( 'Add widgets here to appear in your sidebar.', 'uncomp' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+	'name'          => __( 'Course Sidebar Area', 'uncomp' ),
+	'id'            => 'course-sidebar',
+	'description'   => __( 'Add widgets here to appear in your sidebar.', 'uncomp' ),
+	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</aside>',
+	'before_title'  => '<h2 class="widget-title">',
+	'after_title'   => '</h2>'
   ));
   
 }
@@ -131,48 +131,59 @@ add_post_type_support( 'page', 'excerpt' );
 // }  
 // add_filter ('get_the_excerpt','uncomp_filter_excerpt');
 
-
 /**
- * Support For WooCommerce
+ * Hide Admin Bar From Everyone But Admins
  *
  * @since Uncomplicated 2018
  *
  */
-add_theme_support( 'woocommerce' );
-
-
-/**
- * Hook Theme Into Sensei (Woocommerce)
- *
- * @since Uncomplicated 2018
- *
- */
-global $woothemes_sensei;
-remove_action( 'sensei_before_main_content', array( $woothemes_sensei->frontend, 'sensei_output_content_wrapper' ), 10 );
-remove_action( 'sensei_after_main_content', array( $woothemes_sensei->frontend, 'sensei_output_content_wrapper_end' ), 10 );
-
-add_action('sensei_before_main_content', 'my_theme_wrapper_start', 10);
-add_action('sensei_after_main_content', 'my_theme_wrapper_end', 10);
-
-
-function my_theme_wrapper_start() {
-  echo '<div class="flex-full">';
-  get_sidebar('course');
+if (!current_user_can('manage_options')){
+    add_filter('show_admin_bar', '__return_false');
 }
 
-function my_theme_wrapper_end() {
+
+
+// /**
+//  * Support For WooCommerce
+//  *
+//  * @since Uncomplicated 2018
+//  *
+//  */
+// add_theme_support( 'woocommerce' );
+
+
+// /**
+//  * Hook Theme Into Sensei (Woocommerce)
+//  *
+//  * @since Uncomplicated 2018
+//  *
+//  */
+// global $woothemes_sensei;
+// remove_action( 'sensei_before_main_content', array( $woothemes_sensei->frontend, 'sensei_output_content_wrapper' ), 10 );
+// remove_action( 'sensei_after_main_content', array( $woothemes_sensei->frontend, 'sensei_output_content_wrapper_end' ), 10 );
+
+// add_action('sensei_before_main_content', 'my_theme_wrapper_start', 10);
+// add_action('sensei_after_main_content', 'my_theme_wrapper_end', 10);
+
+
+// function my_theme_wrapper_start() {
+//   echo '<div class="flex-full">';
+//   get_sidebar('course');
+// }
+
+// function my_theme_wrapper_end() {
     
-  echo '</div>';
-}
+//   echo '</div>';
+// }
 
 
 /**
  * Declare support for the WooCommerce Sensei
  */
-function uncomp_declare_sensei_support() {
-    add_theme_support( 'sensei' );
-}
-add_action( 'after_setup_theme', 'uncomp_declare_sensei_support' );
+// function uncomp_declare_sensei_support() {
+//     add_theme_support( 'sensei' );
+// }
+// add_action( 'after_setup_theme', 'uncomp_declare_sensei_support' );
 
 /**
 * remove default sensei titles
