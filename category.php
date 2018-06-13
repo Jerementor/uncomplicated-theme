@@ -13,7 +13,7 @@ get_header();
 <div class="section-minvh bg-grey-lighter">
 <div class="padding-20">
 <div class="w-container">
-<h1><?php single_cat_title(); ?></h1>
+<h1>Category: <?php single_cat_title(); ?></h1>
 <div class="w-row">
     <div class="w-col w-col-8">
 	     <?php if ( have_posts() ) : ?>
