@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- RightMessage -->
+    <script type="text/javascript"> 
+    (function(p, a, n, d, o, b) {
+        o = n.createElement('script'); o.type = 'text/javascript'; o.async = true; o.src = 'https://tag.rightmessage.com/'+p+'.js';
+        b = n.getElementsByTagName('script')[0]; b.parentNode.insertBefore(o, b);
+        d = function(h, u, i) { var o = n.createElement('style'); o.id = 'rmcloak'+i; o.type = 'text/css';
+            o.appendChild(n.createTextNode('.rmcloak'+h+'{visibility:hidden}.rmcloak'+u+'{display:none}'));
+            b.parentNode.insertBefore(o, b); return o; }; o = d('', '-hidden', ''); d('-stay-invisible', '-stay-hidden', '-stay');
+        setTimeout(function() { o.parentNode && o.parentNode.removeChild(o); }, a);
+    })('1855395163', 2500, document);
+    </script>
+    
     
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta content="width=device-width, initial-scale=1" name="viewport">      
@@ -12,16 +24,7 @@
     && get_option( 'thread_comments' ) ) 
     wp_enqueue_script( 'comment-reply' ); ?>
     
-    <script type="text/javascript"> 
-    (function(p, a, n, d, o, b) {
-    o = n.createElement('script'); o.type = 'text/javascript'; o.async = true; o.src = 'https://tag.rightmessage.com/'+p+'.js';
-    b = n.getElementsByTagName('script')[0]; b.parentNode.insertBefore(o, b);
-    d = function(h, u, i) { var o = n.createElement('style'); o.id = 'rmcloak'+i; o.type = 'text/css';
-    o.appendChild(n.createTextNode('.rmcloak'+h+'{visibility:hidden}.rmcloak'+u+'{display:none}'));
-    b.parentNode.insertBefore(o, b); return o; }; o = d('', '-hidden', ''); d('-stay-invisible', '-stay-hidden', '-stay');
-    setTimeout(function() { o.parentNode && o.parentNode.removeChild(o); }, a);
-    })('1855395163', 2500, document);
-    </script>
+
         
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
     
