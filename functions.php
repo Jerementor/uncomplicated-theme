@@ -140,7 +140,19 @@ if (!current_user_can('manage_options')){
     add_filter('show_admin_bar', '__return_false');
 }
 
-
+/**
+ * remove p tag from lessons
+ *
+ * @since Uncomplicated 2018
+ *
+ */
+function uncomp_remove_p_on_pages() {
+    $pages = array(87, "/lessons");
+    if ( is_page($pages) ) {
+        remove_filter( 'the_content', 'wpautop' );
+    }
+}
+add_action( 'wp_head', 'uncomp_remove_p_on_pages' );
 
 // /**
 //  * Support For WooCommerce
