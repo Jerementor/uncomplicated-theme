@@ -106,13 +106,6 @@ blockquote {
   color: #999;
 }
 
-.mx-560 {
-  display: block;
-  width: 560px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .padding-20 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -231,7 +224,14 @@ blockquote {
 }
 
 .btn-dark.btn-upgrade {
-  margin-bottom: 0em;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  float: none;
+}
+
+.btn-dark.float-right {
+  padding-right: 40px;
+  padding-left: 40px;
   float: right;
 }
 
@@ -264,27 +264,20 @@ blockquote {
 
 .article-header {
   display: block;
-  margin-bottom: 0.3em;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
   -webkit-transition: color 650ms ease;
   transition: color 650ms ease;
   font-family: Merriweather, serif;
-  color: #3d4852;
-  font-size: 1.5em;
+  color: #22292f;
+  font-size: 19px;
   line-height: 1.45em;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
 }
 
 .article-header:hover {
   color: #3490dc;
-}
-
-.get-post-info {
-  margin-bottom: 2em;
-  padding: 20px;
-  border-radius: 4px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12);
 }
 
 .page-post-heading {
@@ -368,15 +361,24 @@ blockquote {
 
 .lesson-name {
   margin-bottom: 0em;
-  padding-top: 6px;
-  padding-bottom: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+  background-color: #fff;
+  -webkit-transition: background-color 520ms ease;
+  transition: background-color 520ms ease;
+  text-align: left;
   list-style-type: none;
+}
+
+.lesson-name:hover {
+  background-color: #f8f8f8;
 }
 
 .lesson-link-inverse {
   -webkit-transition: color 460ms ease;
   transition: color 460ms ease;
-  color: #97aec0;
+  color: #8795a1;
   font-weight: 400;
   text-decoration: none;
 }
@@ -395,32 +397,50 @@ blockquote {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
 }
 
-.card-header.bg-white {
-  padding: 28px 20px 28px 40px;
+.card.blue-top {
+  border-top-width: 6px;
+  border-top-color: #3490dc;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
-.card-desc.bg-lightblue {
-  padding: 28px 20px;
-  background-color: #f8fafc;
+.card.black-top {
+  border-top-width: 6px;
+  border-top-color: #3d4852;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+}
+
+.card-header {
+  padding: 28px;
+  background-color: #fff;
+}
+
+.card-header.bg-white {
+  padding: 28px 20px 28px 40px;
+  text-align: center;
+}
+
+.card-desc {
+  padding: 28px;
+}
+
+.card-desc.bg-grey-lightest {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .card-title {
   margin-top: 0px;
   margin-bottom: 0em;
-  float: left;
+  float: none;
   font-family: Merriweather, serif;
-  font-weight: 600;
-  text-align: left;
-}
-
-.img-gg {
-  margin-bottom: 0.5em;
-}
-
-.img-centered {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+  color: #3d4852;
+  font-weight: 700;
 }
 
 .product-header {
@@ -463,50 +483,162 @@ blockquote {
   padding-left: 11px;
 }
 
-.btn-center {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
 .bullet-text {
   margin-bottom: 5px;
   color: #909090;
 }
 
-.btn-light {
-  border: 1px solid #126ab3;
-  border-radius: 4px;
-  background-color: #3490dc;
-  -webkit-transition: background-color 520ms ease;
-  transition: background-color 520ms ease;
-}
-
-.btn-light:hover {
-  background-color: #126ab3;
-}
-
 .bullet-container {
-  margin-bottom: 0.5em;
+  margin-bottom: 1.2em;
   border-bottom: 1px none #000;
 }
 
 .card-title-center {
   margin-top: 0px;
-  margin-bottom: 0em;
+  margin-bottom: 0.5em;
   float: none;
-  font-family: Merriweather, serif;
+  font-family: Muli, sans-serif;
   color: #3d4852;
   font-weight: 600;
   text-align: center;
 }
 
 .card-title-center.developer {
+  margin-bottom: 0.5em;
+  font-family: Muli, sans-serif;
   color: #3490dc;
 }
 
 .inverse-header {
   font-weight: 700;
+}
+
+.card-price-text {
+  margin-top: 0px;
+  margin-bottom: 0em;
+  color: #3d4852;
+  font-size: 48px;
+}
+
+.card-price {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-price.bg-grey-lighter {
+  text-align: center;
+}
+
+.btn-light-inverse {
+  display: block;
+  margin: 40px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid silver;
+  border-radius: 4px;
+  background-color: #f8fafc;
+  -webkit-transition: border-color 520ms ease;
+  transition: border-color 520ms ease;
+  color: #3d4852;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn-light-inverse:hover {
+  border-color: #3490dc;
+  background-color: #f8fafc;
+}
+
+.text-block {
+  text-align: center;
+}
+
+.article-card {
+  margin-bottom: 2em;
+  padding: 0px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12);
+}
+
+.article-card-header {
+  padding: 20px 40px;
+}
+
+.article-card-excerpt {
+  padding: 0px 40px;
+}
+
+.article-card-readmore {
+  padding: 20px 40px;
+}
+
+.widget-card {
+  margin-bottom: 2em;
+  padding: 40px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12);
+}
+
+.article-card-excerpt-no {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 28px 40px;
+  background-color: #f8fafc;
+  color: #5a5e61;
+}
+
+.article-card-test {
+  margin-bottom: 1.2em;
+  padding: 20px 40px;
+  background-color: #fff;
+}
+
+.article-header-copy {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  -webkit-transition: color 650ms ease;
+  transition: color 650ms ease;
+  font-family: Merriweather, serif;
+  color: #22292f;
+  font-size: 18px;
+  line-height: 1.45em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article-header-copy:hover {
+  color: #3490dc;
+}
+
+.post-avatar {
+  border-radius: 50%;
+}
+
+.post-date {
+  color: #8795a1;
+  font-size: 17px;
+}
+
+.bold-text {
+  color: #22292f;
+}
+
+.card-desc-light {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.lessons-ul {
+  margin-bottom: 0em;
+  padding-left: 0px;
+}
+
+.card-image {
+  background-color: #f1f5f8;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -517,12 +649,13 @@ blockquote {
     background-color: transparent;
     color: #000;
   }
+  .btn-dark.float-right {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 @media (max-width: 767px) {
-  .mx-560 {
-    width: auto;
-  }
   .padding-20 {
     padding-right: 20px;
     padding-left: 20px;
@@ -565,6 +698,9 @@ blockquote {
     float: left;
     font-size: 14px;
     text-align: center;
+  }
+  .btn-dark.float-right {
+    float: none;
   }
   .unity_image {
     padding-top: 10px;
