@@ -22,12 +22,11 @@ get_header();
             <div class="article-card">
               <div class="article-card-header"><?php the_title(sprintf('<a class="article-header" href="%s" rel="bookmark">', esc_url(get_permalink() )), '</a>'); ?></div>
               <div class="article-card-excerpt">
-                <p><?php the_excerpt(); ?></p>
+                <?php the_excerpt(); ?>
               </div>
               <div class="article-card-readmore bg-grey-lightest">
                 <div class="w-row">
                   <div class="w-col w-col-2">
-                      <!--<img src="images/jer3.jpg" width="48" class="post-avatar">-->
                    <?php echo get_avatar($thumbnail_id, 48, $default, $alt, array( 'class' => array( 'post-avatar') )); ?>
                  </div>
                   <div class="w-col w-col-6">
