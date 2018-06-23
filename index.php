@@ -28,8 +28,7 @@ get_header();
                 <div class="w-row">
                   <div class="w-col w-col-2">
                       <!--<img src="images/jer3.jpg" width="48" class="post-avatar">-->
-                   <img class="post-avatar"><?php echo get_avatar($thumbnail_id, 48); ?> </img>
-
+                   <?php echo get_avatar($thumbnail_id, 48, $default, $alt, array( 'class' => array( 'post-avatar') )); ?>
                  </div>
                   <div class="w-col w-col-6">
                     <div><strong class="bold-text"><?php echo $author ?></strong></div>
