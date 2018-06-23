@@ -266,18 +266,12 @@ blockquote {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0em;
-  -webkit-transition: color 650ms ease;
-  transition: color 650ms ease;
   font-family: Merriweather, serif;
   color: #22292f;
   font-size: 19px;
   line-height: 1.45em;
   font-weight: 700;
   text-decoration: none;
-}
-
-.article-header:hover {
-  color: #3490dc;
 }
 
 .page-post-heading {
@@ -364,15 +358,8 @@ blockquote {
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 40px;
-  background-color: #fff;
-  -webkit-transition: background-color 520ms ease;
-  transition: background-color 520ms ease;
   text-align: left;
   list-style-type: none;
-}
-
-.lesson-name:hover {
-  background-color: #f8f8f8;
 }
 
 .lesson-link-inverse {
@@ -566,7 +553,7 @@ blockquote {
 }
 
 .article-card-excerpt {
-  padding: 0px 40px;
+  padding: 10px 40px;
 }
 
 .article-card-readmore {
@@ -627,8 +614,9 @@ blockquote {
 }
 
 .card-desc-light {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #fff;
 }
 
 .lessons-ul {
@@ -639,6 +627,10 @@ blockquote {
 .card-image {
   background-color: #f1f5f8;
   text-align: center;
+}
+
+.article-excerpt {
+  margin-bottom: 0em;
 }
 
 @media (max-width: 991px) {

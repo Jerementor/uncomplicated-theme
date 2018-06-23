@@ -18,7 +18,7 @@ get_header();
 	     <?php if ( have_posts() ) : ?>
     		<?php while ( have_posts() ) : the_post(); ?>
     		 <?php $author = get_the_author(); ?> 
-    		
+    		 <?php $thumbnail_id = get_the_author_meta('ID'); ?>
             <div class="article-card">
               <div class="article-card-header"><?php the_title(sprintf('<a class="article-header" href="%s" rel="bookmark">', esc_url(get_permalink() )), '</a>'); ?></div>
               <div class="article-card-excerpt">
@@ -28,6 +28,8 @@ get_header();
                 <div class="w-row">
                   <div class="w-col w-col-2">
                       <!--<img src="images/jer3.jpg" width="48" class="post-avatar">-->
+                     <!--<img class="post-avatar"><!?php echo get_avatar( $thumbnail_id, 48, $default, $alt, $args ); ?> </img>-->
+
                  </div>
                   <div class="w-col w-col-6">
                     <div><strong class="bold-text"><?php echo $author ?></strong></div>
