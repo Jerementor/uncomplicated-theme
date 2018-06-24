@@ -154,8 +154,9 @@ function uncomp_conditional_wpautop($content) {
     // List exceptions here (each exception should either return true or false)
     $exceptions = array(
         // is_page_template('page-example-template.php'),
-        is_page('the-guide-to-tiny-game-development'),
-        is_page('lessons'),        
+        // is_page('the-guide-to-tiny-game-development'),
+        // is_page('lessons'),
+        is_page()
     );
 
     // Checks to see if any exceptions are met // Returns true or false
