@@ -4,7 +4,7 @@ Theme URI: https://www.jerementor.com
 Author: Jeremy Alexander
 Author URI: https://www.jerementor.com
 Description: The 2018 theme for uncomplicated
-Version: 1.2
+Version: 1.3.0
 Text Domain: jerementor
 Tags: epic blog
 */
@@ -111,4 +111,9 @@ fieldset#edd_profile_password_fieldset, fieldset#edd_profile_personal_fieldset {
 #edd_user_history {
     margin-bottom: 40px;
     font-size: 17px;
+}
+
+/*Remove EDD Address Fields VIA CSS*/
+fieldset#edd_cc_address {
+    display: none;
 }
