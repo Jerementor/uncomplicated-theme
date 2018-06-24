@@ -41,16 +41,28 @@ get_header();
             </div>
    
 	        <?php endwhile; ?>
-	    <?php endif; ?>    			
+ 
+	    
+    <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+    <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+    
+    <?php else : ?>
+    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+    <?php endif; ?>	    
+	    
       	     
     </div>
+    
+    
     
     <div class="w-col w-col-4">
         <div class="widget-card">
         <?php get_sidebar(); ?>	
         </div>
     </div>
+    
 </div>
+<!--end row-->
 </div>
 </div>
 </div>
