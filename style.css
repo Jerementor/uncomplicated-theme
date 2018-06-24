@@ -26,7 +26,7 @@ Tags: epic blog
     display: none;
 }
 /*Remove EDD Address Fields VIA CSS*/
-fieldset#edd_cc_address {
+#edd_cc_address {
     display: none !important;
 }
 
