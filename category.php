@@ -21,7 +21,7 @@ get_header();
     		 <?php $author = get_the_author(); ?> 
     		 <?php $thumbnail_id = get_the_author_meta('ID'); ?>
             <div class="article-card">
-              <div class="article-card-header"><?php the_title(sprintf('<a class="article-header" href="%s" rel="bookmark">', esc_url(get_permalink() )), '</a>'); ?></div>
+              <div class="article-card-header"><?php the_title( '<h2 class="article-header">', '</h2>'); ?></div>
               <div class="article-card-excerpt">
                 <?php the_excerpt(); ?>
               </div>
