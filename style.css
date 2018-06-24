@@ -10,20 +10,24 @@ Tags: epic blog
 */
 
 /* Woocommerce Sensei */
-ul.course-progress-navigation {
-    display: none !important;
-}
+/*ul.course-progress-navigation {*/
+/*    display: none !important;*/
+/*}*/
 
-nav#post-entries {
-    display: none;
-}
-.sensei-breadcrumb {
-    display: none;
-}
+/*nav#post-entries {*/
+/*    display: none;*/
+/*}*/
+/*.sensei-breadcrumb {*/
+/*    display: none;*/
+/*}*/
 
 /*EDD*/
 #edd_profile_address_fieldset{
     display: none;
+}
+/*Remove EDD Address Fields VIA CSS*/
+fieldset#edd_cc_address {
+    display: none !important;
 }
 
 /*edd login*/
@@ -113,11 +117,3 @@ fieldset#edd_profile_password_fieldset, fieldset#edd_profile_personal_fieldset {
     font-size: 17px;
 }
 
-/*Remove EDD Address Fields VIA CSS*/
-fieldset#edd_profile_address_fieldset {
-    display: none;
-}
-
-fieldset#edd_cc_address {
-    display: none !important;
-}
