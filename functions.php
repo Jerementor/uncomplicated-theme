@@ -171,6 +171,14 @@ function uncomp_conditional_wpautop($content) {
     }
 }
 add_filter('the_content', 'uncomp_conditional_wpautop', 9);
+
+/*
+ * Remove Address Fields EDD
+ */
+remove_action( 'edd_purchase_form_after_cc_form', 'edd_checkout_tax_fields', 999 ); 
+
+
+
 // function uncomp_remove_p_on_pages() {
 //     $pages = array(87, "/lessons", "/the-guide-to-tiny-game-development");
 //     if ( is_page($pages) ) {
