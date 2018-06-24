@@ -146,13 +146,37 @@ if (!current_user_can('manage_options')){
  * @since Uncomplicated 2018
  *
  */
-function uncomp_remove_p_on_pages() {
-    $pages = array(87, "/lessons", "/the-guide-to-tiny-game-development");
-    if ( is_page($pages) ) {
-        remove_filter( 'the_content', 'wpautop' );
+function uncomp_conditional_wpautop($content) {
+    // true  = wpautop is  ON  unless any exceptions are met
+    // false = wpautop is  OFF unless any exceptions are met
+    $wpautop_on_by_default = true;
+
+    // List exceptions here (each exception should either return true or false)
+    $exceptions = array(
+        // is_page_template('page-example-template.php'),
+        is_page('the-guide-to-tiny-game-development'),
+        is_page('lessons'),        
+    );
+
+    // Checks to see if any exceptions are met // Returns true or false
+    $exception_is_met = in_array(true, $exceptions);
+
+    // Returns the content
+    if ($wpautop_on_by_default==$exception_is_met) {
+        remove_filter('the_content','wpautop');
+        return $content;
+    } else {
+        return $content;
     }
 }
-add_action( 'wp_head', 'uncomp_remove_p_on_pages' );
+add_filter('the_content', 'uncomp_conditional_wpautop', 9);
+// function uncomp_remove_p_on_pages() {
+//     $pages = array(87, "/lessons", "/the-guide-to-tiny-game-development");
+//     if ( is_page($pages) ) {
+//         remove_filter( 'the_content', 'wpautop' );
+//     }
+// }
+// add_action( 'wp_head', 'uncomp_remove_p_on_pages' );
 
 // /**
 //  * Support For WooCommerce
