@@ -18,18 +18,49 @@ get_header();
     <div class="w-col w-col-8">
 	     <?php if ( have_posts() ) : ?>
     		<?php while ( have_posts() ) : the_post(); ?>
-    		   <div class="get-post-info">
-       			    <?php the_title(sprintf('<a class="article-header" href="%s" rel="bookmark">', esc_url(get_permalink() )), '</a>'); ?>
-       			    <p><?php the_excerpt(); ?></p>
+    		 <?php $author = get_the_author(); ?> 
+    		 <?php $thumbnail_id = get_the_author_meta('ID'); ?>
+            <div class="article-card">
+              <div class="article-card-header"><?php the_title(sprintf('<a class="article-header" href="%s" rel="bookmark">', esc_url(get_permalink() )), '</a>'); ?></div>
+              <div class="article-card-excerpt">
+                <?php the_excerpt(); ?>
+              </div>
+              <div class="article-card-readmore bg-grey-lightest">
+                <div class="w-row">
+                  <div class="w-col w-col-2">
+                   <?php echo get_avatar($thumbnail_id, 48, $default, $alt, array( 'class' => array( 'post-avatar') )); ?>
+                 </div>
+                  <div class="w-col w-col-6">
+                    <div><strong class="bold-text"><?php echo $author ?></strong></div>
+                    <div class="post-date"><?php the_time('F jS'); ?> </div>
+                  </div>
+                  <div class="w-clearfix w-col w-col-4">
+                      <a href="<?php the_permalink(); ?>" class="btn-dark float-right w-button">Read Post</a>
+                  </div>
                 </div>
+              </div>
+            </div>
+   
 	        <?php endwhile; ?>
-	    <?php endif; ?>    		
+
+    <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+    <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+    
+    <?php else : ?>
+    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+    <?php endif; ?>	    
+	    
       	     
     </div>
     
+    
+    
     <div class="w-col w-col-4">
+        <div class="widget-card">
         <?php get_sidebar(); ?>	
+        </div>
     </div>
+    
 </div>
 </div>
 </div>
