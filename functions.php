@@ -147,7 +147,7 @@ if (!current_user_can('manage_options')){
  *
  */
 function uncomp_remove_p_on_pages() {
-    $pages = array(87, "/lessons");
+    $pages = array(87, "/lessons", "/the-guide-to-tiny-game-development");
     if ( is_page($pages) ) {
         remove_filter( 'the_content', 'wpautop' );
     }
