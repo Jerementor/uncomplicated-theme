@@ -60,16 +60,16 @@ p#edd_show_discount {
   border: 1px solid #dae1e7;
   border-radius: 4px;
   background-color: #fff !important;
-    color: #2b8ee0 !important;
+  color: #2b8ee0 !important;
   box-shadow: 0 1px 2px 0 rgba(34, 41, 47, .12);
   text-align: center;    
 }
 
-#edd_checkout_form_wrap, #edd_show_discount {
-    background: white !important;
-    color: #2b8ee0 !important;
-    padding: 15px !important; 
-}
+/*#edd_checkout_form_wrap, #edd_show_discount {*/
+/*    background: white !important;*/
+/*    color: #2b8ee0 !important;*/
+/*    padding: 15px !important; */
+/*}*/
 
 /*#edd_checkout_cart td img {*/
 /*    float: left;*/
