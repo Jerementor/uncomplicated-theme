@@ -191,6 +191,12 @@ function uncomp_edd_empty_cart_redirect() {
 add_action( 'template_redirect', 'uncomp_edd_empty_cart_redirect' );
 
 
+
+// remove/unhook the user info fields
+remove_action( 'edd_register_fields_before', 'edd_user_info_fields' );
+// add/rehook the user info fields to after the register fields
+add_action( 'edd_register_fields_after', 'edd_user_info_fields' );
+
 // /**
 //  * Support For WooCommerce
 //  *
@@ -243,41 +249,3 @@ add_action( 'template_redirect', 'uncomp_edd_empty_cart_redirect' );
 // remove_action( ‘sensei_message_single_title’, array( $woothemes_sensei->frontend, ‘sensei_single_title’ ), 10 );
 
 
-/**
- * Change Payment Radio Buttons To Dropdown
- */
- // Remove the new radio buttons
-function uncomp_edd_remove_payment_mode_radios() {
-  remove_action( 'edd_payment_payment_mode_select', 'edd_payment_mode_select' );
-}
-add_action( 'init', 'uncomp_edd_remove_payment_mode_radios' );
-// Register the new select menu
-function uncomp_edd_payment_mode_select() {
-	$gateways = edd_get_enabled_payment_gateways();
-	$page_URL = edd_get_current_page_url();
-	do_action('edd_payment_mode_top'); ?>
-	<form id="edd_payment_mode" action="<?php echo $page_URL; ?>" method="GET">
-		<fieldset id="edd_payment_mode_select">
-			<?php do_action('edd_payment_mode_before_gateways'); ?>
-			<p id="edd-payment-mode-wrap">
-				<?php
-					echo '<select class="edd-select" name="payment-mode" id="edd-gateway">';
-						echo '<option value="0">' . __( 'Select payment method', 'edd' ) . '</option>';
-						foreach($gateways as $gateway_id => $gateway) :
-							echo '<option value="' . $gateway_id . '">' . $gateway['checkout_label'] . '</option>';
-						endforeach;
-					echo '</select>';
-				?>
-			</p>
-			<?php do_action('edd_payment_mode_after_gateways'); ?>
-		</fieldset>
-		<fieldset id="edd_payment_mode_submit" class="edd-no-js">
-			<p id="edd-next-submit-wrap">
-				<?php echo edd_checkout_button_next(); ?>
-			</p>
-		</fieldset>
-	</form>
-	<div id="edd_purchase_form_wrap"></div><!-- the checkout fields are loaded into this-->
-	<?php do_action('edd_payment_mode_bottom');
-}
-add_action( 'edd_payment_payment_mode_select', 'uncomp_edd_payment_mode_select' );
