@@ -14,10 +14,11 @@ get_header();
 
 <?php
 
-   echo do_shortcode('download_checkout');
+   echo do_shortcode('[download_checkout]');
 
 ?>
-
+</div>
+</div>
 <div class="padding-100 bg-grey-lightest">
 <div class="w-container">
 <?php 
@@ -30,8 +31,7 @@ if ( have_posts() ) {
 	} // end while
 } // end if
 ?>
-</div>
-</div>
+
 </div>
 </div>
 <?php get_footer(); ?>
