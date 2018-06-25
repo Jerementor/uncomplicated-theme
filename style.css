@@ -36,25 +36,30 @@ fieldset#edd_cc_address {
 
 /*Checkout Table*/
 
+/*cart header*/
 #edd_checkout_cart th {
     border: none !important;
 }
 
+/*cart items*/
 #edd_checkout_cart td {
     border: none !important;
     padding: 28px;
 }
 
+/*cart item title*/
 span.edd_checkout_cart_item_title {
     font-weight: 700;
 }
 
+/*cart image*/
 #edd_checkout_cart td img {
     margin: -20px 8px 0 0 !important;
     height: 64px;
     width: 64px;
 }
 
+/*discount closed button*/
 p#edd_show_discount {
   padding: 15px !important;
   border: 1px solid #dae1e7;
@@ -65,6 +70,7 @@ p#edd_show_discount {
   text-align: center;    
 }
 
+/*discount open*/
 p#edd-discount-code-wrap {
     padding: 40px !important;
     border: 1px solid #f1f5f8;
@@ -72,6 +78,20 @@ p#edd-discount-code-wrap {
     box-shadow: 0 2px 8px 0 rgba(34, 41, 47, .12);
     margin-bottom: 25px !important;
 }
+
+/*discount open input*/
+input#edd-discount {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*discount open button*/
+input.edd-apply-discount.edd-submit.blue.button {
+    padding: 10px !important;
+    width: 25%;
+    margin-bottom: 5px !important;
+}
+
 /*#edd_checkout_form_wrap, #edd_show_discount {*/
 /*    background: white !important;*/
 /*    color: #2b8ee0 !important;*/
