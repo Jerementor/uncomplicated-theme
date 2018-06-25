@@ -50,9 +50,18 @@ span.edd_checkout_cart_item_title {
 }
 
 #edd_checkout_cart td img {
+    margin: -20px 8px 0 0 !important;
     height: 64px;
     width: 64px;
 }
+
+/*#edd_checkout_cart td img {*/
+/*    float: left;*/
+/*    margin: -20px 8px 0 0;*/
+/*    background: 0 0;*/
+/*    padding: 0;*/
+/*    border: none;*/
+/*}*/
 
 /*edd login*/
 input#edd_login_submit {
