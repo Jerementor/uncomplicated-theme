@@ -203,6 +203,21 @@ function uncomp_edd_purchase_form_before_submit() { ?>
 <?php }
 add_action( 'edd_purchase_form_before_submit', 'uncomp_edd_purchase_form_before_submit', 1000 );
 
+function uncomp_edd_purchase_after_checkout_cart() { ?>
+    <div class="padding-100 bg-grey-lightest">
+    <div class="w-container">
+<?php }
+add_action( 'edd_after_checkout_cart', 'uncomp_edd_purchase_after_checkout_cart', 1000 );
+
+
+function uncomp_edd_purchase_after_checkout_cart() { ?>
+    </div>
+    </div>
+<?php }
+add_action( 'edd_purchase_form_after_submit', 'uncomp_edd_purchase_after_checkout_cart', 1000 );
+
+
+
 // /**
 //  * Support For WooCommerce
 //  *
