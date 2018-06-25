@@ -65,6 +65,13 @@ p#edd_show_discount {
   text-align: center;    
 }
 
+p#edd-discount-code-wrap {
+    padding: 40px !important;
+    border: 1px solid #f1f5f8;
+    background-color: #fff !important;
+    box-shadow: 0 2px 8px 0 rgba(34, 41, 47, .12);
+    margin-bottom: 25px !important;
+}
 /*#edd_checkout_form_wrap, #edd_show_discount {*/
 /*    background: white !important;*/
 /*    color: #2b8ee0 !important;*/
