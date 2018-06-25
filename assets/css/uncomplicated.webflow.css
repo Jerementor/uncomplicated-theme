@@ -379,6 +379,7 @@ blockquote {
   width: auto;
   margin-bottom: 20px;
   padding: 0px;
+  border: 1px none #f8fafc;
   border-radius: 6px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
 }
@@ -517,7 +518,8 @@ blockquote {
 
 .btn-light-inverse {
   display: block;
-  margin: 40px auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px solid silver;
@@ -632,6 +634,81 @@ blockquote {
   margin-bottom: 0em;
 }
 
+.purchase-complete {
+  font-family: Merriweather, serif;
+  text-align: center;
+}
+
+.box-w-shadow {
+  position: static;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 40px;
+  border: 1px solid #f1f5f8;
+  background-color: #fff;
+  box-shadow: 0 2px 8px 0 rgba(34, 41, 47, .12);
+}
+
+.discount-p-1 {
+  padding: 10px;
+}
+
+.discount-box {
+  padding: 15px;
+  border: 1px solid #dae1e7;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(34, 41, 47, .12);
+  text-align: center;
+}
+
+.link {
+  color: #2b8ee0;
+  text-decoration: none;
+}
+
+.checkout-sub-header {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: Merriweather, serif;
+  font-weight: 700;
+}
+
+.btn-center {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.btn-order {
+  padding: 12px 40px;
+  border-radius: 6px;
+  background-color: #0075d6;
+  box-shadow: 0 4px 10px 0 rgba(0, 99, 182, .49);
+}
+
+.image-2 {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form-field {
+  height: 50px;
+  margin-bottom: 1em;
+  border: 1px solid #dae1e7;
+  border-radius: 6px;
+  box-shadow: inset 0 0 11px 0 rgba(96, 111, 123, .12);
+  color: #22292f;
+}
+
+.form-label {
+  margin-bottom: 1em;
+  font-family: Merriweather, serif;
+  color: #3d4852;
+}
+
 @media (max-width: 991px) {
   .nav-link {
     background-color: #fff;
@@ -668,8 +745,16 @@ blockquote {
   .unity_image {
     padding-top: 0px;
   }
+  .padding-60.bg-white {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   .mx-640-left {
     width: auto;
+  }
+  .padding-100.bg-grey-lightest {
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .bullet-desc {
     text-align: center;
