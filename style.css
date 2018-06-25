@@ -90,6 +90,7 @@ input.edd-apply-discount.edd-submit.blue.button {
     padding: 10px !important;
     width: 25%;
     margin-bottom: 5px !important;
+    margin-left: 20px;
 }
 
 /*#edd_checkout_form_wrap, #edd_show_discount {*/
