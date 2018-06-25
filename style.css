@@ -29,6 +29,9 @@ Tags: epic blog
 #edd_cc_address {
     display: none !important;
 }
+fieldset#edd_cc_address {
+    display: none !important;
+}
 
 /*edd login*/
 input#edd_login_submit {
