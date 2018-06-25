@@ -209,7 +209,7 @@ function uncomp_edd_purchase_after_checkout_cart() { ?>
 
 </div>
 </div>
-    <div class="padding-100 bg-grey-lightest">
+    <div class="padding-100 bg-white">
      <div class="w-container">
 <?php }
 add_action( 'edd_after_checkout_cart', 'uncomp_edd_purchase_after_checkout_cart', 1000 );
