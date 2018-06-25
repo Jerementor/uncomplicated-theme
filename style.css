@@ -33,6 +33,27 @@ fieldset#edd_cc_address {
     display: none !important;
 }
 
+
+/*Checkout Table*/
+
+#edd_checkout_cart th {
+    border: none !important;
+}
+
+#edd_checkout_cart td {
+    border: none !important;
+    padding: 28px;
+}
+
+span.edd_checkout_cart_item_title {
+    font-weight: 700;
+}
+
+#edd_checkout_cart td img {
+    height: 64px;
+    width: 64px;
+}
+
 /*edd login*/
 input#edd_login_submit {
     width: 100%;
@@ -119,4 +140,5 @@ fieldset#edd_profile_password_fieldset, fieldset#edd_profile_personal_fieldset {
     margin-bottom: 40px;
     font-size: 17px;
 }
+
 
