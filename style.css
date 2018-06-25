@@ -55,6 +55,15 @@ span.edd_checkout_cart_item_title {
     width: 64px;
 }
 
+p#edd_show_discount {
+  padding: 15px;
+  border: 1px solid #dae1e7;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(34, 41, 47, .12);
+  text-align: center;    
+}
+
 /*#edd_checkout_cart td img {*/
 /*    float: left;*/
 /*    margin: -20px 8px 0 0;*/
