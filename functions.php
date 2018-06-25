@@ -177,15 +177,19 @@ add_filter('the_content', 'uncomp_conditional_wpautop', 9);
  */
 remove_action( 'edd_purchase_form_after_cc_form', 'edd_cc_form_address_fields', 999 ); 
 
+/*
+ * Redirect If Cart Empty
+ */
+function uncomp_edd_empty_cart_redirect() {
+	$cart 		= function_exists( 'edd_get_cart_contents' ) ? edd_get_cart_contents() : false;
+	$redirect 	= site_url( '/' ); // could be the URL to your shop
+	if ( function_exists( 'edd_is_checkout' ) && edd_is_checkout() && ! $cart ) {
+		wp_redirect( $redirect, 301 ); 
+		exit;
+	}
+}
+add_action( 'template_redirect', 'uncomp_edd_empty_cart_redirect' );
 
-
-// function uncomp_remove_p_on_pages() {
-//     $pages = array(87, "/lessons", "/the-guide-to-tiny-game-development");
-//     if ( is_page($pages) ) {
-//         remove_filter( 'the_content', 'wpautop' );
-//     }
-// }
-// add_action( 'wp_head', 'uncomp_remove_p_on_pages' );
 
 // /**
 //  * Support For WooCommerce
