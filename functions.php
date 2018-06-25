@@ -197,6 +197,12 @@ remove_action( 'edd_register_fields_before', 'edd_user_info_fields' );
 // add/rehook the user info fields to after the register fields
 add_action( 'edd_register_fields_after', 'edd_user_info_fields' );
 
+
+function uncomp_edd_purchase_form_before_submit() { ?>
+	<p>Your custom text</p>
+<?php }
+add_action( 'edd_purchase_form_before_submit', 'uncomp_edd_purchase_form_before_submit', 1000 );
+
 // /**
 //  * Support For WooCommerce
 //  *
