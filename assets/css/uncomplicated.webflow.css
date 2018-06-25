@@ -640,9 +640,10 @@ blockquote {
 }
 
 .box-w-shadow {
-  position: static;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  position: relative;
+  top: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   padding: 40px;
   border: 1px solid #f1f5f8;
   background-color: #fff;
@@ -672,6 +673,7 @@ blockquote {
   margin-bottom: 2em;
   font-family: Merriweather, serif;
   font-weight: 700;
+  text-decoration: underline;
 }
 
 .btn-center {
@@ -686,6 +688,17 @@ blockquote {
   border-radius: 6px;
   background-color: #0075d6;
   box-shadow: 0 4px 10px 0 rgba(0, 99, 182, .49);
+  -webkit-transition: box-shadow 500ms ease, -webkit-transform 500ms ease;
+  transition: box-shadow 500ms ease, -webkit-transform 500ms ease;
+  transition: transform 500ms ease, box-shadow 500ms ease;
+  transition: transform 500ms ease, box-shadow 500ms ease, -webkit-transform 500ms ease;
+}
+
+.btn-order:hover {
+  box-shadow: 0 13px 35px 0 rgba(0, 99, 182, .49);
+  -webkit-transform: translate(0px, -2px);
+  -ms-transform: translate(0px, -2px);
+  transform: translate(0px, -2px);
 }
 
 .image-2 {
@@ -695,6 +708,7 @@ blockquote {
 }
 
 .form-field {
+  width: 75%;
   height: 50px;
   margin-bottom: 1em;
   border: 1px solid #dae1e7;
@@ -704,9 +718,33 @@ blockquote {
 }
 
 .form-label {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   font-family: Merriweather, serif;
   color: #3d4852;
+}
+
+.padding-60-no-bottom {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.padding-60-no-bottom.bg-grey-lightest {
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.safety-paragraph {
+  color: #b8c2cc;
+}
+
+.checkout-safety-header {
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+  font-family: Merriweather, serif;
+  color: #8795a1;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
 }
 
 @media (max-width: 991px) {
@@ -756,11 +794,23 @@ blockquote {
     padding-right: 20px;
     padding-left: 20px;
   }
+  .padding-100.bg-white {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   .bullet-desc {
     text-align: center;
   }
   .image-holder {
     text-align: center;
+  }
+  .padding-60-no-bottom.bg-white {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .padding-60-no-bottom.bg-grey-lightest {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
