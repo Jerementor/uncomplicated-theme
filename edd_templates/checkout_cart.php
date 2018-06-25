@@ -4,9 +4,6 @@
  */
 
 global $post; ?>
-<div class="padding-60 bg-white">
-<div class="w-container"><img src="/wp-content/uploads/2018/06/Shield-And-Armor.png" class="image-2">
-<h1 class="purchase-complete">Complete Your Purchase</h1>
 <div class="box-w-shadow">	
 <table id="edd_checkout_cart" <?php if ( ! edd_is_ajax_disabled() ) { echo 'class="ajaxed"'; } ?>>
 	<thead>
@@ -136,5 +133,4 @@ global $post; ?>
 	</tfoot>
 </table>
 </div>
-</div>
-</div>
+
