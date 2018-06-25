@@ -7,7 +7,7 @@
  */
 get_header(); 
 ?>
-<!--PAGE BLANK-->
+<!--PAGE Checkout-->
 <div class="padding-100 bg-grey-lightest">
 <div class="w-container">
 <?php 
