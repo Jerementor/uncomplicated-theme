@@ -9,9 +9,9 @@ global $post; ?>
 	<thead>
 		<tr class="edd_cart_header_row">
 			<?php do_action( 'edd_checkout_table_header_first' ); ?>
-			<th class="edd_cart_item_name"><?php _e( 'Name', 'easy-digital-downloads' ); ?></th>
+			<th class="edd_cart_item_name"><?php _e( 'Product', 'easy-digital-downloads' ); ?></th>
 			<th class="edd_cart_item_price"><?php _e( 'Price', 'easy-digital-downloads' ); ?></th>
-			<th class="edd_cart_actions"><?php _e( 'Actions', 'easy-digital-downloads' ); ?></th>
+			<th class="edd_cart_actions"><?php _e( '', 'easy-digital-downloads' ); ?></th>
 			<?php do_action( 'edd_checkout_table_header_last' ); ?>
 		</tr>
 	</thead>

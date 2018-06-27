@@ -190,87 +190,151 @@ function uncomp_edd_empty_cart_redirect() {
 }
 add_action( 'template_redirect', 'uncomp_edd_empty_cart_redirect' );
 
-
-
+/*
+ * EDD Custom Checkout
+ */
 // remove/unhook the user info fields
 remove_action( 'edd_register_fields_before', 'edd_user_info_fields' );
 // add/rehook the user info fields to after the register fields
 add_action( 'edd_register_fields_after', 'edd_user_info_fields' );
 
-
-
-function uncomp_edd_purchase_form_before_submit() { ?>
-<p>Your custom text</p>
- <?php }
-add_action( 'edd_purchase_form_before_submit', 'uncomp_edd_purchase_form_before_submit', 1000 );
-
-function uncomp_edd_purchase_after_checkout_cart() { ?>
-</div>
-
+/*
+ * After Checkout Cart (opening)
+ */
+function uncomp_edd_purchase_after_checkout_cart(){ ?>
 </div>
 </div>
-    <div class="padding-100 bg-white">
-     <div class="w-container">
+</div>
+<div class="padding-100 bg-white">
+<div class="w-container">
 <?php }
 add_action( 'edd_after_checkout_cart', 'uncomp_edd_purchase_after_checkout_cart', 1000 );
 
-
-function uncomp_edd_purchase_after_submit() { ?>
-    </div>
-     </div>
- <?php }
+/*
+ * After Submit Button (ending)
+ */
+function uncomp_edd_purchase_after_submit(){ ?>
+</div> <!--End Container-->
+</div><!--End Padding-100-->
+<?php }
 add_action( 'edd_purchase_form_after_submit', 'uncomp_edd_purchase_after_submit', 1000 );
 
-
-// /**
-//  * Support For WooCommerce
-//  *
-//  * @since Uncomplicated 2018
-//  *
-//  */
-// add_theme_support( 'woocommerce' );
-
-
-// /**
-//  * Hook Theme Into Sensei (Woocommerce)
-//  *
-//  * @since Uncomplicated 2018
-//  *
-//  */
-// global $woothemes_sensei;
-// remove_action( 'sensei_before_main_content', array( $woothemes_sensei->frontend, 'sensei_output_content_wrapper' ), 10 );
-// remove_action( 'sensei_after_main_content', array( $woothemes_sensei->frontend, 'sensei_output_content_wrapper_end' ), 10 );
-
-// add_action('sensei_before_main_content', 'my_theme_wrapper_start', 10);
-// add_action('sensei_after_main_content', 'my_theme_wrapper_end', 10);
-
-
-// function my_theme_wrapper_start() {
-//   echo '<div class="flex-full">';
-//   get_sidebar('course');
-// }
-
-// function my_theme_wrapper_end() {
-    
-//   echo '</div>';
-// }
-
-
-/**
- * Declare support for the WooCommerce Sensei
+/*
+ * Before Purchase form begins
+ * After Checkout Cart
  */
-// function uncomp_declare_sensei_support() {
-//     add_theme_support( 'sensei' );
-// }
-// add_action( 'after_setup_theme', 'uncomp_declare_sensei_support' );
+function uncomp_edd_before_purchase(){ ?>
+<p>Before purchase form</p>
+<?php }
+add_action ('edd_before_purchase_form', 'uncomp_edd_before_purchase', 1000);
 
-/**
-* remove default sensei titles
-*/
-// global $woothemes_sensei;
-// remove_action( ‘sensei_course_single_title’, array( $woothemes_sensei->frontend , ‘sensei_single_title’ ), 10 );
-// remove_action( ‘sensei_lesson_single_title’, array( $woothemes_sensei->frontend , ‘sensei_single_title’ ), 10 );
-// remove_action( ‘sensei_quiz_single_title’, array( $woothemes_sensei->frontend, ‘sensei_single_title’ ), 10 );
-// remove_action( ‘sensei_message_single_title’, array( $woothemes_sensei->frontend, ‘sensei_single_title’ ), 10 );
+/*
+ * Before Personal Info!
+ */
+function uncomp_edd_top_purchase(){ ?>
+<p>Purchase Form Top</p>
+<?php }
+add_action ('edd_purchase_form_top', 'uncomp_edd_top_purchase', 1000);
+
+/*
+ * After Personal Info But...
+ * Placed at end of entire form
+ */
+function uncomp_edd_bottom_purchase(){ ?>
+<p>Purchase Form Bottom (way bottom)</p>
+<?php }
+add_action ('edd_purchase_form_bottom', 'uncomp_edd_bottom_purchase', 1000);
+
+/*
+ * After Personal Info But...
+ * Inside personal info formset
+ */
+function uncomp_edd_purchase_form_user_info(){ ?>
+<p>After personal info fields (but inside)</p>
+<?php }
+add_action('edd_purchase_form_user_info', 'uncomp_edd_purchase_form_user_info', 1000);
+
+/*
+ * Before Personal Info But...
+ * Also before discount box
+ */
+function uncomp_edd_purchase_form_before_fields(){ ?>
+<p>Before personal info fields</p>
+<?php }
+add_action('edd_before_purchase_form', 'uncomp_edd_purchase_form_before_fields', 1000);
+
+/*
+ * After Personal Info But...
+ * WAY bottom (final closing)
+ */
+function uncomp_edd_purchase_form_after_fields(){ ?>
+<p>After personal info fields</p>
+<?php }
+add_action('edd_after_purchase_form', 'uncomp_edd_purchase_form_after_fields', 1000);
+
+/*
+ * Before Payment Fields
+ */
+function uncomp_edd_purchase_form_before_payment_fields(){ ?>
+<!--</div><!-- Close col-6-->
+<!--<div class="w-col w-col-6">-->
+<!--<p>Before payment fields</p>-->
+<?php }
+add_action('edd_before_cc_fields', 'uncomp_edd_purchase_form_before_payment_fields', 1000);
+
+/*
+ * After Payment Fields
+ */
+function uncomp_edd_purchase_form_after_payment_fields(){ ?>
+<p>After payment fields</p>
+<?php }
+add_action('edd_after_cc_fields', 'uncomp_edd_purchase_form_after_payment_fields', 1000);
+
+/*
+ * Before Submit Button
+ */
+function uncomp_edd_purchase_form_before_submit() { ?>
+<!--<p>Before order button</p>-->
+<div class="btn-center">
+<?php }
+add_action( 'edd_purchase_form_before_submit', 'uncomp_edd_purchase_form_before_submit', 1000 );
+
+/*
+ * After Submit Button
+ */
+function uncomp_edd_purchase_form_after_submit() { ?>
+<!--<p>After order button</p>-->
+</div>
+<?php }
+add_action( 'edd_purchase_form_after_submit', 'uncomp_edd_purchase_form_after_submit', 1000 );
 
 
+  
+function uncomp_custom_override_checkout_fields( $fields ) {
+    //unset($fields['billing']['billing_first_name']);
+    //unset($fields['billing']['billing_last_name']);
+    unset($fields['billing']['billing_company']);
+    unset($fields['billing']['billing_address_1']);
+    unset($fields['billing']['billing_address_2']);
+    unset($fields['billing']['billing_city']);
+    unset($fields['billing']['billing_postcode']);
+    unset($fields['billing']['billing_country']);
+    unset($fields['billing']['billing_state']);
+    unset($fields['billing']['billing_phone']);
+    unset($fields['order']['order_comments']);
+    //unset($fields['billing']['billing_email']);
+    return $fields;
+}
+add_filter( 'woocommerce_checkout_fields' , 'uncomp_custom_override_checkout_fields' );
+
+
+/* WooCommerce: The Code Below Removes The Additional Information Tab */
+add_filter( 'woocommerce_product_tabs', 'uncomp_woo_remove_product_tabs', 98 );
+function uncomp_woo_remove_product_tabs( $tabs ) {
+unset( $tabs['additional_information'] );
+return $tabs;
+}
+/* WooCommerce: The Code Below Removes The Additional Information Title Text */
+add_filter('woocommerce_enable_order_notes_field', '__return_false');
+
+remove_action( 'woocommerce_checkout_order_review', 'woocommerce_order_review', 10 );
