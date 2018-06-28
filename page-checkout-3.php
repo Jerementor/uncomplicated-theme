@@ -76,34 +76,37 @@ get_header();
 	    Total:<span class="price-span-total"> <?php wc_cart_totals_order_total_html(); ?>  </span>  
 	  </h1>
 	</div>
+	
+  <div class="edit-cart"><a href="/cart" class="view-cart w-button">Review Cart</a></div>
+	
 	<?php do_action( 'woocommerce_before_checkout_form', $checkout ); ?>
 	
 	</div>	
 		<div class="box-w-shadow-norm-copy">
-	<div class="w-container">	
-	<h1 class="checkout-header">You&#x27;re 60 Seconds Away From Your Next Tiny Game</h1>
-	
-	<?php 
-	if ( have_posts() ) {
-		while ( have_posts() ) {
-			the_post(); 
-	
-			the_content();
-		
-		} // end while
-	} // end if
-	?>
-	<div class="w-row">
-	      <div class="w-col w-col-6">
-	        <h4 class="priv-header">14-Day Money Back Guarantee</h4>
-	        <p class="priv-text">If you aren't satisfied within the first 14 days of your purchase, you are eligible for a full refund.</p>
-	      </div>  
-	      <div class="w-col w-col-6">
-	        <h4 class="priv-header">Your Information Is Safe</h4>
-	        <p class="priv-text">All checkout data is secured by 128-bit SSL encryption. </p>
-	      </div>
-	
-	    </div>
+			<div class="w-container">	
+				<h1 class="checkout-header">You&#x27;re 60 Seconds Away From Your Next Tiny Game</h1>
+				
+				<?php 
+				if ( have_posts() ) {
+					while ( have_posts() ) {
+						the_post(); 
+				
+						the_content();
+					
+					} // end while
+				} // end if
+				?>
+				<div class="w-row">
+				      <div class="w-col w-col-6">
+				        <h4 class="priv-header">14-Day Money Back Guarantee</h4>
+				        <p class="priv-text">If you aren't satisfied within the first 14 days of your purchase, you are eligible for a full refund.</p>
+				      </div>  
+				      <div class="w-col w-col-6">
+				        <h4 class="priv-header">Your Information Is Safe</h4>
+				        <p class="priv-text">All checkout data is secured by 128-bit SSL encryption. </p>
+				      </div>
+				
+				    </div>
 	</div>
 	</div>
 	</div>

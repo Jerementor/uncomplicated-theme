@@ -936,6 +936,56 @@ blockquote {
   margin-left: auto;
 }
 
+.edit-cart {
+  margin-bottom: 0.5em;
+  padding: 20px 15px;
+  border: 1px none #dae1e7;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+
+.edit-cart-button {
+  color: #abd6fa;
+}
+
+.btn-light {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  -webkit-transition: border-color 520ms ease;
+  transition: border-color 520ms ease;
+  color: #3d4852;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn-light:hover {
+  border-color: #3490dc;
+}
+
+.view-cart {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(0, 0%, 99%, .39);
+  border-radius: 4px;
+  background-color: transparent;
+  -webkit-transition: border-color 520ms ease, color 520ms ease;
+  transition: border-color 520ms ease, color 520ms ease;
+  color: rgba(248, 250, 252, .58);
+}
+
+.view-cart:hover {
+  border-color: #fcfcfc;
+  color: #f8fafc;
+}
+
 @media (max-width: 991px) {
   .nav-link {
     background-color: #fff;
