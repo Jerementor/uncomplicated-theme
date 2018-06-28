@@ -337,4 +337,7 @@ return $tabs;
 /* WooCommerce: The Code Below Removes The Additional Information Title Text */
 add_filter('woocommerce_enable_order_notes_field', '__return_false');
 
+
 remove_action( 'woocommerce_checkout_order_review', 'woocommerce_order_review', 10 );
+
+

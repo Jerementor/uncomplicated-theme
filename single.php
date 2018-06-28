@@ -23,9 +23,6 @@ get_header();
 <h1 class="page-post-heading"><?php wp_title(''); ?></h1>
 <div class="div-categories">
 	<?php the_category(' ', 'multiple')?>
-	<!--<a href="#" class="category-name">Reaction</a>-->
-	<!--<a href="#" class="category-name">Reaction</a>-->
-	<!--<a href="#" class="category-name">Reaction</a>-->
 </div>
 
 <?php 
