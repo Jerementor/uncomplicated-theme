@@ -10,7 +10,7 @@ get_header();
 <!--PAGE Cart-->
 <div class="cart-flex-container bg-grey-lightest">
 <div class="cart-contents">
-<div class="w-container"><img src="/wp-content/uploads/2018/06/Treasure.png" class="checkout-image">
+<div class="w-container"><img src="/uploads/2018/06/Treasure.png" class="checkout-image">
   <h1 class="cart-header">Review Your Cart</h1>
   <div class="box-w-shadow-cart">
 	<?php 
