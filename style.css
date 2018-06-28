@@ -180,6 +180,10 @@ div#stripe-card-element {
    box-shadow: 0 2px 8px 0 rgba(34, 30, 47, .24);
 }
 
+.woocommerce-message {
+    display: none;
+}
+
 
 input#payment_method_stripe, input#payment_method_paypal {
     display: none !important;

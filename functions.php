@@ -342,12 +342,12 @@ remove_action( 'woocommerce_checkout_order_review', 'woocommerce_order_review', 
 
 
  
-function uncomp_change_autofocus_checkout_field( $fields ) {
-$fields['billing']['billing_first_name']['autofocus'] = true;
-return $fields;
-}
+// function uncomp_change_autofocus_checkout_field( $fields ) {
+// $fields['billing']['billing_first_name']['autofocus'] = true;
+// return $fields;
+// }
 
-add_filter( 'woocommerce_checkout_fields', 'uncomp_change_autofocus_checkout_field' );
+// add_filter( 'woocommerce_checkout_fields', 'uncomp_change_autofocus_checkout_field' );
 
 
 function uncomp_add_to_cart_redirect( $url ) {
