@@ -181,7 +181,11 @@ div#stripe-card-element {
 }
 
 .woocommerce-message {
-    display: none;
+    display: none !important;
+}
+
+.woocommerce-terms-and-conditions-wrapper {
+    margin-bottom: 2em;
 }
 
 
@@ -199,20 +203,56 @@ input#payment_method_stripe, input#payment_method_paypal, [type="radio"]:checked
     display: none;
 }
 
-label#edd-gateway-option-stripe, label#edd-gateway-option-paypal {
-    cursor: pointer;
-    border: 1px solid #f1f5f8;
-    font-weight: 500;
-    background-color: #fff;
-    box-shadow: 0 2px 8px 0 rgba(34, 41, 47, .12);
-    transition: box-shadow 520ms ease;    
-    /*transition: background 520ms ease;    */
-    /*transition: border 520ms ease;*/
-    margin-right: -10px;
+td.product-name {
+    font-size: 17px !important;
 }
 
-#edd-gateway-option-stripe:hover, #edd-gateway-option-paypal:hover {
-   /*border: 4px solid #2b8ee0;*/
-   box-shadow: 0 2px 8px 0 rgba(34, 30, 47, .50);
-   /*background: #2b8ee0;*/
+td.product-name a{
+    color: #0075d6 !important;
+    text-decoration: none !important;    
 }
+
+
+.woocommerce table.shop_table {
+    border: 1px solid rgb(48, 163, 253);
+    padding: 20px !important;
+
+}
+
+.woocommerce #content table.cart td.actions, .woocommerce table.cart td.actions, .woocommerce-page #content table.cart td.actions, .woocommerce-page table.cart td.actions {
+    padding: 20px !important;
+}
+
+input#coupon_code {
+    width: 40%;
+}
+
+.coupon button {
+    margin-left: -20px !important;
+}
+
+a.checkout-button.button.alt.wc-forward {
+  padding: 20px 20px;
+  border-radius: 6px;
+  background-color: #0075d6;
+  box-shadow: 0 4px 10px 0 rgba(0, 99, 182, .49);
+  -webkit-transition: box-shadow 500ms ease, -webkit-transform 500ms ease;
+  transition: box-shadow 500ms ease, -webkit-transform 500ms ease;
+  transition: transform 500ms ease, box-shadow 500ms ease;
+  transition: transform 500ms ease, box-shadow 500ms ease, -webkit-transform 500ms ease; 
+}
+
+a.checkout-button.button.alt.wc-forward:hover {
+  box-shadow: 0 13px 35px 0 rgba(0, 99, 182, .49);
+  -webkit-transform: translate(0px, -2px);
+  -ms-transform: translate(0px, -2px);
+  transform: translate(0px, -2px);
+}
+
+.woocommerce table.shop_table th {
+    font-weight: 400;
+    padding: 10px;
+    font-size: 17px !important;
+    font-family: Merriweather;
+}
+
