@@ -356,3 +356,12 @@ function uncomp_add_to_cart_redirect( $url ) {
 	return $url;
 }
 add_filter( 'woocommerce_add_to_cart_redirect', 'uncomp_add_to_cart_redirect' );
+
+// hide coupon field on cart page
+function uncomp_hide_coupon_field_on_cart( $enabled ) {
+	if ( is_cart() ) {
+		$enabled = false;
+	}
+	return $enabled;
+}
+add_filter( 'woocommerce_coupons_enabled', 'uncomp_hide_coupon_field_on_cart' );
