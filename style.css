@@ -16,6 +16,12 @@ Tags: epic blog
     border: 1px solid #ccc !important;
 }
 
+.woocommerce form .form-row input.input-text:focus,  .woocommerce form .form-row textarea {
+    border: 1px solid #2b8ee0 !important;
+    color: #2b8ee0 !important;
+    font-weight: 400 !important;  
+}
+
 .woocommerce-billing-fields h3 {
     display: none;
 }

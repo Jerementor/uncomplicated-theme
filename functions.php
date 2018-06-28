@@ -341,3 +341,10 @@ add_filter('woocommerce_enable_order_notes_field', '__return_false');
 remove_action( 'woocommerce_checkout_order_review', 'woocommerce_order_review', 10 );
 
 
+ 
+function uncomp_change_autofocus_checkout_field( $fields ) {
+$fields['billing']['billing_first_name']['autofocus'] = true;
+return $fields;
+}
+
+add_filter( 'woocommerce_checkout_fields', 'uncomp_change_autofocus_checkout_field' );
