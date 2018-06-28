@@ -224,7 +224,7 @@ td.product-name a{
 }
 
 input#coupon_code {
-    width: 40%;
+    /*width: 40%;*/
 }
 
 .coupon button {
