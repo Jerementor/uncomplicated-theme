@@ -270,6 +270,8 @@ a.checkout-button.button.alt.wc-forward:hover {
 
 .gform_footer.top_label > input {
   padding: 20px 20px;
+  border: 1px solid #0087f7;
+  color: #fff;
   border-radius: 6px;
   background-color: #0075d6;
   box-shadow: 0 4px 10px 0 rgba(0, 99, 182, .49);
