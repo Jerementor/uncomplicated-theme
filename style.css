@@ -140,7 +140,7 @@ a.remove {
 .woocommerce-password-strength {
     margin-top: 5px;
     margin-bottom: 5px;
-    float: left; 
+    /*float: left; */
 }
 
 ul.wc_payment_methods.payment_methods.methods {
