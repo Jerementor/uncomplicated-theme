@@ -256,3 +256,24 @@ a.checkout-button.button.alt.wc-forward:hover {
     font-family: Merriweather;
 }
 
+/*Gravity Forms*/
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+    border-radius: 4px !important;
+    border: 1px solid #ccc;
+    padding: 10px !important;
+}
+
+/*.grav_input{*/
+/*    border-radius: 4px !important;*/
+/*    border: 1px solid #ccc;*/
+/*    padding: 10px !important;*/
+/*}*/
+
+.grav_border {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-top: 20px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
