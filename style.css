@@ -263,11 +263,29 @@ a.checkout-button.button.alt.wc-forward:hover {
     padding: 10px !important;
 }
 
-/*.grav_input{*/
-/*    border-radius: 4px !important;*/
-/*    border: 1px solid #ccc;*/
-/*    padding: 10px !important;*/
-/*}*/
+.gform_wrapper textarea {
+    border-radius: 4px !important;
+    border: 1px solid #ccc;
+}
+
+.gform_footer.top_label > input {
+  padding: 20px 20px;
+  border-radius: 6px;
+  background-color: #0075d6;
+  box-shadow: 0 4px 10px 0 rgba(0, 99, 182, .49);
+  -webkit-transition: box-shadow 500ms ease, -webkit-transform 500ms ease;
+  transition: box-shadow 500ms ease, -webkit-transform 500ms ease;
+  transition: transform 500ms ease, box-shadow 500ms ease;
+  transition: transform 500ms ease, box-shadow 500ms ease, -webkit-transform 500ms ease;  
+}
+
+.gform_footer.top_label > input:hover {
+  box-shadow: 0 13px 35px 0 rgba(0, 99, 182, .49);
+  -webkit-transform: translate(0px, -2px);
+  -ms-transform: translate(0px, -2px);
+  transform: translate(0px, -2px);    
+}
+
 
 .grav_border {
     border: 1px solid #ccc;
@@ -277,3 +295,5 @@ a.checkout-button.button.alt.wc-forward:hover {
     padding-right: 20px;
     padding-bottom: 20px;
 }
+
+
