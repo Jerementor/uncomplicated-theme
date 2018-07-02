@@ -42,6 +42,11 @@ p {
   margin-bottom: 1.5em;
 }
 
+a {
+  color: #008eff;
+  text-decoration: underline;
+}
+
 ul {
   margin-top: 0px;
   margin-bottom: 1.5em;
@@ -122,11 +127,11 @@ blockquote {
 .btn-submit {
   width: 100%;
   height: 50px;
-  border-style: solid;
+  border-style: none none solid;
   border-width: 1px 1px 3px;
-  border-color: #38a89d;
+  border-color: #0063b4;
   border-radius: 4px;
-  background-color: #4dc0b5;
+  background-color: #0075d6;
   -webkit-transition: background-color 650ms ease;
   transition: background-color 650ms ease;
   font-size: 14px;
@@ -134,7 +139,8 @@ blockquote {
 }
 
 .btn-submit:hover {
-  background-color: #38a89d;
+  border-color: #0075d6;
+  background-color: #008bff;
 }
 
 .input-normal {
@@ -1098,6 +1104,34 @@ blockquote {
   box-shadow: 0 2px 8px 0 rgba(34, 41, 47, .12);
 }
 
+.checkbox-label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: #606f7b;
+  font-size: 14px;
+  line-height: 1.3em;
+}
+
+.checkbox {
+  margin-top: 20px;
+  float: left;
+  font-size: 36px;
+}
+
+.link-2 {
+  color: #0075d6;
+}
+
+.checkbox-field {
+  margin-bottom: 12px;
+  padding: 10px 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 117, 214, .5);
+  border-radius: 4px;
+}
+
 @media (max-width: 991px) {
   .nav-link {
     background-color: #fff;
@@ -1109,6 +1143,10 @@ blockquote {
   .btn-dark.float-right {
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .padding-100.bg-grey-lighter {
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .padding-flex-side {
     -webkit-box-orient: vertical;
@@ -1215,6 +1253,10 @@ blockquote {
   .unity_image {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .padding-140.bg-grey-lighter {
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .box-w-shadow-norm {
     padding-right: 15px;
