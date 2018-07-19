@@ -41,32 +41,3 @@ wc_print_notices();
 </div>   	
 </div>   	
 </div>   	
-<!--<div class="section-minvh bg-grey-lighter">-->
-<!--<div class="padding-20">-->
-<!--<div class="w-container">-->
-<!--<div class="w-row">-->
-<!--    <div class="w-col w-col-8">-->
-<!--	   <div class="get-post-info">-->
-<!--			<div class="woocommerce-MyAccount-content">-->
-<!--				<?php-->
-<!--					/**-->
-<!--					 * My Account content.-->
-<!--					 * @since 2.6.0-->
-<!--					 */-->
-<!--					do_action( 'woocommerce_account_content' );-->
-<!--				?>-->
-<!--			</div>   		   -->
-<!--        </div>-->
-<!--    </div>-->
-    
-<!--<div class="w-col w-col-4">-->
-<!--   	<div class="get-post-info">-->
-<!--		<!?php-->
-<!--   			  do_action( 'woocommerce_account_navigation' ); -->
-<!--   		?>-->
-<!--    </div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
