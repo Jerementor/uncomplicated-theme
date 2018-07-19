@@ -28,7 +28,7 @@ wc_print_notices();
  */
 
 ?>
-<div class="section-minvh bg-white">
+<div class="padding-60 bg-grey-lighter">
 <div class="w-container">	
 <div class="woocommerce-MyAccount-content">
 	<?php
