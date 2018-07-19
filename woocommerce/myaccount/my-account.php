@@ -28,9 +28,10 @@ wc_print_notices();
  */
 
 ?>
-<div class="padding-60 bg-grey-lighter">
-<div class="w-container">	
+<div class="section-minvh padding-60 bg-grey-lighter">
 <div class="woocommerce-MyAccount-content">
+<div class="w-container">	
+	
 	<?php
 		/**
 		 * My Account content.
@@ -38,6 +39,7 @@ wc_print_notices();
 		 */
 		do_action( 'woocommerce_account_content' );
 	?>
+	
 </div>   	
 </div>   	
 </div>   	
