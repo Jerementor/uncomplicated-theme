@@ -365,3 +365,15 @@ function uncomp_hide_coupon_field_on_cart( $enabled ) {
 	return $enabled;
 }
 add_filter( 'woocommerce_coupons_enabled', 'uncomp_hide_coupon_field_on_cart' );
+
+
+function uncomp_wc_redirect( $redirect, $user ) {
+    // $user_id = $user->ID;
+    // if(user_can( $user,  )) { // With the user object you can access their saved carts etc. too.
+    // $redirect = get_permalink();
+    // }
+    // OR without depending on the user
+    $redirect = '/lessons';
+    return $redirect;
+}
+add_filter( 'woocommerce_login_redirect', 'uncomp_wc_redirect', 10, 2 );
