@@ -193,7 +193,7 @@ input#payment_method_stripe, input#payment_method_paypal {
     display: none !important;
 }
 
-input#payment_method_stripe, input#payment_method_paypal, [type="radio"]:checked + label {
+input#payment_method_stripe, input#payment_method_paypal, [type="radio"]:checked checked="checked" + label {
     border: 2px solid #2b8ee0 !important;
     color: #2b8ee0 !important;
     font-weight: 400 !important;  
