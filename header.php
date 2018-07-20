@@ -26,6 +26,16 @@
     setTimeout(function() { o.parentNode && o.parentNode.removeChild(o); }, a);
 })('1855395163', 2500, document);
 </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122656639-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122656639-1');
+</script>
+
     <title><?php wp_title(''); ?></title>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
