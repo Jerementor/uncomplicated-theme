@@ -388,6 +388,25 @@ blockquote {
   padding-bottom: 30px;
 }
 
+.card-desc.bg-grey-lightest.card-desc-no-padd {
+  padding: 0px;
+}
+
+.card-desc.bg-grey-lightest.card-no-top-pad {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.card-desc.bg-grey-lightest.card-desc-less-pad {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.card-desc.bg-white.card-less-padding {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .card-title {
   margin-top: 0px;
   margin-bottom: 0em;
@@ -452,7 +471,6 @@ blockquote {
   margin-bottom: 0.5em;
   float: none;
   font-family: Muli, sans-serif;
-  color: #3d4852;
   font-weight: 600;
   text-align: center;
 }
@@ -464,6 +482,8 @@ blockquote {
 }
 
 .inverse-header {
+  font-family: Merriweather, serif;
+  font-size: 42px;
   font-weight: 700;
 }
 
@@ -486,7 +506,7 @@ blockquote {
 .btn-light-inverse {
   display: block;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px solid silver;
@@ -990,6 +1010,10 @@ blockquote {
   border-radius: 50%;
 }
 
+.img-center.img-margin {
+  margin-bottom: 1em;
+}
+
 .img-round {
   border-radius: 50%;
 }
@@ -1025,6 +1049,55 @@ blockquote {
 .landing-headers-center {
   margin-top: 0px;
   font-weight: 800;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inverse-header-no-padding {
+  margin-top: 0px;
+  font-family: Merriweather, serif;
+  font-size: 42px;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+
+.title-header {
+  font-family: Merriweather, serif;
+  font-size: 54px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sub-title-center-copy {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card-text-dark {
+  color: #3d4852;
+  text-align: center;
+}
+
+.note-text {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #909090;
+  text-align: center;
+}
+
+.package-header {
+  margin-top: 0px;
+  font-family: Merriweather, serif;
+  font-size: 42px;
+  line-height: 1.2em;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -1155,6 +1228,9 @@ blockquote {
     text-align: center;
   }
   .landing-headers-center {
+    text-align: center;
+  }
+  .sub-title-center-copy {
     text-align: center;
   }
 }

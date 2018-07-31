@@ -10,15 +10,9 @@ get_header();
 ?>
 
 <!--SINGLE.PHP-->
-
-	
-	<!--<!?php the_category(' ', 'multiple')?>-->
-	<!--<!?php the_excerpt(); ?>-->
-	
 <div class="section-minvh bg-grey-lighter">
-<div class="padding-20">
+<div class="padding-20 bg-white">
 <div class="w-container">
-<div class="get-post-content">
 <div class="mx-640">
 <h1 class="page-post-heading"><?php wp_title(''); ?></h1>
 <div class="div-categories">
@@ -39,5 +33,5 @@ get_header();
 </div>
 </div>
 </div>
-</div>
+
 <?php get_footer(); ?>
